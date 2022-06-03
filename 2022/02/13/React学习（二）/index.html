@@ -499,22 +499,27 @@
 
   
 
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "https://zihong135.github.io/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/",
-  owner: 'zihong135',
-  repo: 'zihong135.github.io',
-  oauth: {
-    client_id: '0efd887d6ce836a3a007',
-    client_secret: 'ea17083d8249fbe0b1dc5afc62522ed6bbb1f2ca',
-  },
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+
+if(true){
+    var gitalk = new Gitalk({
+    clientID: '0efd887d6ce836a3a007',
+    clientSecret: 'ea17083d8249fbe0b1dc5afc62522ed6bbb1f2ca',
+    repo: 'zihong135.github.io',
+    owner: 'zihong135',
+    admin: ['zihong135'],
+    id: 'Sun Feb 13 2022 10:46:27 GMT+0800',
+    distractionFreeMode: 'true'
 })
-gitment.render('gitment-ctn')
+gitalk.render('gitalk-container') 
+}
 </script>
+  
   
 
 
