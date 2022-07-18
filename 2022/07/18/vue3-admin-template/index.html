@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="https://zihong135.github.io">
   <title>vue3-admin-template的基础开发 | 未入流的小邹博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vue3-admin-template本人学习视频网址为：视频地址源码:github 网页采用技术框架本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据 网页展示登录页面采用mock模拟后端接口数据，当用户名与密码都">
+  <meta name="description" content="vue3-admin-template本人学习视频网址为：视频地址源码:github 网页采用技术框架本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue3-admin-template的基础开发">
 <meta property="og:url" content="https://zihong135.github.io/2022/07/18/vue3-admin-template/index.html">
 <meta property="og:site_name" content="未入流的小邹博客">
-<meta property="og:description" content="vue3-admin-template本人学习视频网址为：视频地址源码:github 网页采用技术框架本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据 网页展示登录页面采用mock模拟后端接口数据，当用户名与密码都">
+<meta property="og:description" content="vue3-admin-template本人学习视频网址为：视频地址源码:github 网页采用技术框架本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据">
 <meta property="og:locale">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/716a9009661b4191900f170025ae8a4b.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/ee664c94652b40169d1b3e2213011fbc.png">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/106238e5a4bc4604971e7af2a46ead63.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/6bc092a7ffa64ede94609665196061ea.png">
 <meta property="article:published_time" content="2022-07-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-18T13:28:39.311Z">
+<meta property="article:modified_time" content="2022-07-18T13:34:46.091Z">
 <meta property="article:author" content="未入流的小邹">
 <meta property="article:tag" content="WEB">
 <meta property="article:tag" content="vue.js">
@@ -193,6 +193,7 @@
       
         <h1 id="vue3-admin-template"><a href="#vue3-admin-template" class="headerlink" title="vue3-admin-template"></a>vue3-admin-template</h1><p><strong>本人学习视频网址为：</strong><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1QU4y1E7qo?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=ed0298f43a56abb5d3ca088355bb4c01">视频地址</a><br><strong>源码:<a target="_blank" rel="noopener" href="https://github.com/zihong135/vue3-admin-template.git">github</a></strong></p>
 <h2 id="网页采用技术框架"><a href="#网页采用技术框架" class="headerlink" title="网页采用技术框架"></a>网页采用技术框架</h2><p><img src="https://img-blog.csdnimg.cn/716a9009661b4191900f170025ae8a4b.png" alt="在这里插入图片描述"><br><strong>本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据</strong></p>
+<span id="more"></span>
 <h2 id="网页展示"><a href="#网页展示" class="headerlink" title="网页展示"></a>网页展示</h2><h3 id="登录页面"><a href="#登录页面" class="headerlink" title="登录页面"></a>登录页面</h3><p><img src="https://img-blog.csdnimg.cn/ee664c94652b40169d1b3e2213011fbc.png" alt="在这里插入图片描述"><br><strong>采用mock模拟后端接口数据，当用户名与密码都为admin时才跳转到首页，这里用了路由导航守卫进行判断当前用户是否进行登录，如果没有自动跳转到登录界面，因此当在地址栏输入其他页面时也会跳转回登录页面</strong></p>
 <h3 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">router.beforeEach((to,from,next)=&gt;&#123;</span><br><span class="line">   store.commit(&quot;gettoken&quot;)</span><br><span class="line">    //获取token</span><br><span class="line">    let token = store.state.user.token</span><br><span class="line">    //如果token不存在并且要访问不是登录页</span><br><span class="line">    if(!token &amp;&amp; to.name !==&quot;login&quot; )&#123;</span><br><span class="line">      next(&#123;name:&quot;login&quot;&#125;)</span><br><span class="line">    &#125;else if (token &amp;&amp; to.name=== &quot;login&quot;)&#123;</span><br><span class="line">      next(&#123;name:&quot;home&quot;&#125;)</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">      //如果没有匹配到当前路径</span><br><span class="line">      if (to.matched.length == 0) &#123; router.push(to.path)&#125;</span><br><span class="line">      next()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p><strong>当用户名与密码输入正确时就会跳转到首页，首页有着采用element-plus组件构成的侧边栏菜单，面包屑，卡片，等等，并用echart对数据进行可视化展示，有柱状图，折线图，饼图，并且对echart进行封装，使代码看起来更简洁</strong><br><img src="https://img-blog.csdnimg.cn/bd9c561a29314f76a643b5d068bad45b.png" alt="在这里插入图片描述"></p>
@@ -527,6 +528,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">React</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">WEB</a>
               </li>
              
@@ -536,10 +541,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">React</a>
               </li>
             
             <div class="clearfix"></div>
