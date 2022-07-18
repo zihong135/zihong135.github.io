@@ -6,15 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zihong135.github.io">
-  <title>Category: 小程序 | 未入流的小邹博客</title>
+  <title>vue3-admin-template的基础开发 | 未入流的小邹博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="未入流的小邹博客">
-<meta property="og:url" content="https://zihong135.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.html">
+  <meta name="description" content="vue3-admin-template本人学习视频网址为：视频地址源码:github 网页采用技术框架本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据 网页展示登录页面采用mock模拟后端接口数据，当用户名与密码都">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue3-admin-template的基础开发">
+<meta property="og:url" content="https://zihong135.github.io/2022/07/18/vue3-admin-template/index.html">
 <meta property="og:site_name" content="未入流的小邹博客">
+<meta property="og:description" content="vue3-admin-template本人学习视频网址为：视频地址源码:github 网页采用技术框架本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据 网页展示登录页面采用mock模拟后端接口数据，当用户名与密码都">
 <meta property="og:locale">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/716a9009661b4191900f170025ae8a4b.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ee664c94652b40169d1b3e2213011fbc.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/bd9c561a29314f76a643b5d068bad45b.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/106238e5a4bc4604971e7af2a46ead63.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6bc092a7ffa64ede94609665196061ea.png">
+<meta property="article:published_time" content="2022-07-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-07-18T13:28:39.311Z">
 <meta property="article:author" content="未入流的小邹">
+<meta property="article:tag" content="WEB">
+<meta property="article:tag" content="vue.js">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/716a9009661b4191900f170025ae8a4b.png">
   
     <link rel="alternative" href="/atom.xml" title="未入流的小邹博客" type="application/atom+xml">
   
@@ -149,36 +161,96 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-vue3-admin-template" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      vue3-admin-template的基础开发
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+
+        
+        <a href="/2022/07/18/vue3-admin-template/" class="archive-article-date">
+  	<time datetime="2022-07-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-18</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="vue3-admin-template"><a href="#vue3-admin-template" class="headerlink" title="vue3-admin-template"></a>vue3-admin-template</h1><p><strong>本人学习视频网址为：</strong><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1QU4y1E7qo?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=ed0298f43a56abb5d3ca088355bb4c01">视频地址</a><br><strong>源码:<a target="_blank" rel="noopener" href="https://github.com/zihong135/vue3-admin-template.git">github</a></strong></p>
+<h2 id="网页采用技术框架"><a href="#网页采用技术框架" class="headerlink" title="网页采用技术框架"></a>网页采用技术框架</h2><p><img src="https://img-blog.csdnimg.cn/716a9009661b4191900f170025ae8a4b.png" alt="在这里插入图片描述"><br><strong>本管理模板采用vue3开发，使用vue-router来作为路由跳转，将登录成功后产生的菜单，token放入到vuex中存储，通过axios来进行交互，来获取服务端内容，由于没有后端接口api，本管理模板将采用mock来模拟后端接口数据</strong></p>
+<h2 id="网页展示"><a href="#网页展示" class="headerlink" title="网页展示"></a>网页展示</h2><h3 id="登录页面"><a href="#登录页面" class="headerlink" title="登录页面"></a>登录页面</h3><p><img src="https://img-blog.csdnimg.cn/ee664c94652b40169d1b3e2213011fbc.png" alt="在这里插入图片描述"><br><strong>采用mock模拟后端接口数据，当用户名与密码都为admin时才跳转到首页，这里用了路由导航守卫进行判断当前用户是否进行登录，如果没有自动跳转到登录界面，因此当在地址栏输入其他页面时也会跳转回登录页面</strong></p>
+<h3 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">router.beforeEach((to,from,next)=&gt;&#123;</span><br><span class="line">   store.commit(&quot;gettoken&quot;)</span><br><span class="line">    //获取token</span><br><span class="line">    let token = store.state.user.token</span><br><span class="line">    //如果token不存在并且要访问不是登录页</span><br><span class="line">    if(!token &amp;&amp; to.name !==&quot;login&quot; )&#123;</span><br><span class="line">      next(&#123;name:&quot;login&quot;&#125;)</span><br><span class="line">    &#125;else if (token &amp;&amp; to.name=== &quot;login&quot;)&#123;</span><br><span class="line">      next(&#123;name:&quot;home&quot;&#125;)</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">      //如果没有匹配到当前路径</span><br><span class="line">      if (to.matched.length == 0) &#123; router.push(to.path)&#125;</span><br><span class="line">      next()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p><strong>当用户名与密码输入正确时就会跳转到首页，首页有着采用element-plus组件构成的侧边栏菜单，面包屑，卡片，等等，并用echart对数据进行可视化展示，有柱状图，折线图，饼图，并且对echart进行封装，使代码看起来更简洁</strong><br><img src="https://img-blog.csdnimg.cn/bd9c561a29314f76a643b5d068bad45b.png" alt="在这里插入图片描述"></p>
+<h3 id="ehcart代码封装（部分代码"><a href="#ehcart代码封装（部分代码" class="headerlink" title="ehcart代码封装（部分代码)"></a>ehcart代码封装（部分代码)</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">initChart() &#123;</span><br><span class="line">      //赋值</span><br><span class="line">      this.initChartData();</span><br><span class="line">      //判断echart是否渲染</span><br><span class="line">      if (this.echarts) &#123;</span><br><span class="line">        this.echarts.setOption(this.option);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        this.echarts = echarts.init(this.$refs.echarts);</span><br><span class="line">        this.echarts.setOption(this.option);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    //放入数据</span><br><span class="line">    initChartData() &#123;</span><br><span class="line">      if (this.isAxisChart) &#123;</span><br><span class="line">        this.xAxisoption.xAxis.data = this.chartData.xData;</span><br><span class="line">        this.xAxisoption.series = this.chartData.series;</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        this.videooption.series = this.chartData.series;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+<h2 id="折叠侧边菜单栏"><a href="#折叠侧边菜单栏" class="headerlink" title="折叠侧边菜单栏"></a>折叠侧边菜单栏</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//传入两个参数，一个为state状态，一个是所需要传入的参数</span><br><span class="line">        collapseMenus(state)&#123;</span><br><span class="line">            state.isCollapse = !state.isCollapse</span><br><span class="line">        &#125;,</span><br></pre></td></tr></table></figure>
+<p><strong>由于element组件提供了菜单栏显示，因此我们只需要在vuex的state状态中加入相应的变量以及一个取反的方法即可进行伸缩菜单栏</strong></p>
+<h2 id="用户管理列表界面"><a href="#用户管理列表界面" class="headerlink" title="用户管理列表界面"></a>用户管理列表界面</h2><p><img src="https://img-blog.csdnimg.cn/106238e5a4bc4604971e7af2a46ead63.png" alt="在这里插入图片描述"><br><strong>用户管理界面采用element-plus的表格进行数据展示，在添加按钮中可以新增新的用户，并且在搜索框中可以对姓名进行模糊搜索，在点击编辑按钮时跳出弹框对数据进行回显，由于删除功能没有后端接口的支持，用mock只能模拟流程并不能真正删除数据，分页插件能够随着点击不同页码进行跳转</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">//确认是增加还是修改</span><br><span class="line">    comfirm() &#123;</span><br><span class="line">      //确定按钮修改表格数据</span><br><span class="line">      if (this.titletype === &quot;add&quot;) &#123;</span><br><span class="line">        addUserData(this.formData).then((res) =&gt; &#123;</span><br><span class="line">          console.log(res);</span><br><span class="line">        &#125;);</span><br><span class="line">        this.isshow = false;</span><br><span class="line">        this.getlist();</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        updateUserData(this.formData).then((res) =&gt; &#123;</span><br><span class="line">          console.log(res);</span><br><span class="line">          this.isshow = false;</span><br><span class="line">          this.getlist();</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    //新增用户信息</span><br><span class="line">    adduser() &#123;</span><br><span class="line">      this.isshow = true;</span><br><span class="line">      this.titletype = &quot;add&quot;;</span><br><span class="line">      //防止修改回显</span><br><span class="line">      this.formData = &#123;</span><br><span class="line">        name: &quot;&quot;,</span><br><span class="line">        addr: &quot;&quot;,</span><br><span class="line">        age: &quot;&quot;,</span><br><span class="line">        birthday: &quot;&quot;,</span><br><span class="line">        sex: &quot;&quot;,</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;,</span><br><span class="line">    //获取表格数据,由于是mock自动生成这里不需要传入page</span><br><span class="line">    getlist(page = 1, name = &quot;&quot;) &#123;</span><br><span class="line">      console.log(typeof page != &quot;number&quot;);</span><br><span class="line">      if (typeof page != &quot;number&quot;) &#123;</span><br><span class="line">        name = page;</span><br><span class="line">        page = 1;</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        this.config.page = page;</span><br><span class="line">      &#125;</span><br><span class="line">      getUserList(&#123; page: this.config.page, name: name &#125;).then((res) =&gt; &#123;</span><br><span class="line">        console.log(res);</span><br><span class="line">        this.tableData = res.data.list.map((item) =&gt; &#123;</span><br><span class="line">          item.sexLabel = item.sex === 0 ? &quot;女&quot; : &quot;男&quot;;</span><br><span class="line">          item.birthday = item.birth;</span><br><span class="line">          return item;</span><br><span class="line">        &#125;);</span><br><span class="line">        this.config.total = res.data.count;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure>
+<h2 id="面包屑"><a href="#面包屑" class="headerlink" title="面包屑"></a>面包屑</h2><p><strong>面包屑即点开侧边菜单栏后会显示出标签，如下图所示</strong><br><strong>其原理是在侧边栏选择路由时调用vuex中的方法push当前路由标签进去，删除时需要注意删除的位置，分为以下几点：<br>1.由于标签渲染有下标参与，因此在进行删除时传入当前标签的下标，如果与标签list的长度一样则是最右边删除，只需要删除当前标签和前一个标签显示为高亮。<br>2.如果删除不是本页的标签，即直接删除即可。<br>3.如果标签在中间，则需要考虑标签高亮向左还是向右，本页面是向右一个标签显示高亮，即删除当前标签后，由于标签长度会减一，而传入进来的标签下标就是右边一个标签，通俗说1是下标，让删除1的标签后原本下标为2的标签瞬间变为1，直接跳转到下一个页面标签即可。</strong><br><img src="https://img-blog.csdnimg.cn/6bc092a7ffa64ede94609665196061ea.png" alt="在这里插入图片描述"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">closepage(item, index) &#123;</span><br><span class="line">      //获取已点击路由数量</span><br><span class="line">      let length = this.tags.length - 1;</span><br><span class="line">      if (this.$route.name !== item.name) &#123;</span><br><span class="line">        this.deletemenu(index);</span><br><span class="line">        return;</span><br><span class="line">      &#125;</span><br><span class="line">      //如果关闭最右边的变标签</span><br><span class="line">      else if (length == index) &#123;</span><br><span class="line">        this.deletemenu(index);</span><br><span class="line">        this.$router.push(&#123;</span><br><span class="line">          name: this.tags[length - 1].name,</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">      //中间的被关闭,下一个成为高亮表示</span><br><span class="line">      else &#123;</span><br><span class="line">        this.deletemenu(index);</span><br><span class="line">        this.$router.push(&#123;</span><br><span class="line">          name: this.tags[index].name,</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure>
+
+
+      
+ <!-- 《添加版权声明 -->
+
+    <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare">
+    <strong class="author">本文作者：</strong>
+    
+      未入流的小邹
+    
+    <br>
+    <strong class="create-time">发布时间：</strong>
+    2022-07-18
+    <br>
+    <strong class="update-time">最后更新：</strong>
+    2022-07-18
+    <br>
+    <strong class="article-titles">本文标题：</strong>
+    <a href="https://zihong135.github.io/2022/07/18/vue3-admin-template/" title="vue3-admin-template的基础开发" target="_blank">vue3-admin-template的基础开发</a>
+    <br>
+    <strong class="article-url">本文链接：</strong>
+    <a href="https://zihong135.github.io/2022/07/18/vue3-admin-template/" title="vue3-admin-template的基础开发" target="_blank">https://zihong135.github.io/2022/07/18/vue3-admin-template/</a>
+    <br>
+    <strong class="copyright">版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
+    许可协议进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    
+  </div>
+
+<!-- 添加版权声明》 -->
+
+
+<!-- 添加版权声明》 -->
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/15/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/" class="archive-article-date">
-  	<time datetime="2021-07-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/15/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/">微信小程序学习(四)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -188,13 +260,13 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">vue.js</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -204,195 +276,146 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端/小程序//" class="article-tag-list-link color4">小程序</a>
+        			<a href="/categories/前端/vue//" class="article-tag-list-link color4">vue</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zihong135.github.io/2022/07/18/vue3-admin-template/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/08/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%B8%89)/" class="archive-article-date">
-  	<time datetime="2021-07-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-08</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/06/08/JavaScript%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript学习(四)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/08/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%B8%89)/">微信小程序学习(三)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WEB</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/小程序//" class="article-tag-list-link color4">小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vue3-admin-template"><span class="toc-number">1.</span> <span class="toc-text">vue3-admin-template</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E9%87%87%E7%94%A8%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6"><span class="toc-number">1.1.</span> <span class="toc-text">网页采用技术框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E5%B1%95%E7%A4%BA"><span class="toc-number">1.2.</span> <span class="toc-text">网页展示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.2.1.</span> <span class="toc-text">登录页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E9%83%A8%E5%88%86"><span class="toc-number">1.2.2.</span> <span class="toc-text">代码部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ehcart%E4%BB%A3%E7%A0%81%E5%B0%81%E8%A3%85%EF%BC%88%E9%83%A8%E5%88%86%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.3.</span> <span class="toc-text">ehcart代码封装（部分代码)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%98%E5%8F%A0%E4%BE%A7%E8%BE%B9%E8%8F%9C%E5%8D%95%E6%A0%8F"><span class="toc-number">1.3.</span> <span class="toc-text">折叠侧边菜单栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E5%88%97%E8%A1%A8%E7%95%8C%E9%9D%A2"><span class="toc-number">1.4.</span> <span class="toc-text">用户管理列表界面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%8C%85%E5%B1%91"><span class="toc-number">1.5.</span> <span class="toc-text">面包屑</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%BA%8C%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2021-07-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%BA%8C%EF%BC%89/">微信小程序学习(二)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WEB</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/小程序//" class="article-tag-list-link color4">小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/05/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" class="archive-article-date">
-  	<time datetime="2021-07-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-05</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/05/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%B8%80)/">微信小程序学习(一)</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WEB</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/小程序//" class="article-tag-list-link color4">小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+
+if(true){
+    var gitalk = new Gitalk({
+    clientID: '0efd887d6ce836a3a007',
+    clientSecret: 'ea17083d8249fbe0b1dc5afc62522ed6bbb1f2ca',
+    repo: 'zihong135.github.io',
+    owner: 'zihong135',
+    admin: ['zihong135'],
+    id: 'Mon Jul 18 2022 00:00:00 GMT+0800',
+    distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+  
+  
+
 
 
           </div>
@@ -434,10 +457,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
