@@ -6,87 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zihong135.github.io">
-  <title>微信小程序学习(四) | 未入流的小邹博客</title>
+  <title>Uni-app简易商城 | 未入流的小邹博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本人学习视频为黑马程序员，视频连接为：B 站黑马程序员 Button">
+  <meta name="description" content="本人所学视频为:黑马程序员&#x3D;&#x3D;uniapp后端接口文档&#x3D;&#x3D;这里本人的选择是B站情话微微田的接口。可以去视频的评论区去下载">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序学习(四)">
-<meta property="og:url" content="https://zihong135.github.io/2021/07/15/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/index.html">
+<meta property="og:title" content="Uni-app简易商城">
+<meta property="og:url" content="https://zihong135.github.io/2022/07/25/uni-app%E7%AE%80%E6%98%93%E5%95%86%E5%9F%8E/index.html">
 <meta property="og:site_name" content="未入流的小邹博客">
-<meta property="og:description" content="本人学习视频为黑马程序员，视频连接为：B 站黑马程序员 Button">
+<meta property="og:description" content="本人所学视频为:黑马程序员&#x3D;&#x3D;uniapp后端接口文档&#x3D;&#x3D;这里本人的选择是B站情话微微田的接口。可以去视频的评论区去下载">
 <meta property="og:locale">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708171011749.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708171152934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708203626314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708204232135.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708204513355.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708204755667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708204856444.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/202107082207126.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708220840174.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708221320650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/202107082214407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708221100147.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708221537323.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708233209694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708233527778.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708234906120.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210708234959732.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709000913202.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709001713450.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709165108465.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709170144173.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709205831153.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709220122706.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709220916705.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709221922167.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709222206597.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709223650359.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709223750835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709223825632.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709224203664.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2021070922421643.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709224229388.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709225347991.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2021070923332989.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709233450360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210709233533200.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210710001740590.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210710002157373.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210710002501938.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210710101646977.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210710101852394.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2021071010251017.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711112711649.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711112814679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2021071111573434.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711114452974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711115715278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711121747967.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711130145975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711144125812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711144205860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2021071114422882.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711144256891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711144502755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711145302841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711145757583.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711145834909.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711145958375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711150336774.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711150447987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711150711357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711151753926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711151939519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20210711153023637.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2021071115305144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
-<meta property="article:published_time" content="2021-07-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-28T14:14:06.518Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1329afd6dbd149f98e104c10b0a455ea.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/cc9333000a3f4480967c76d77b3de614.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/e0858ed6e1284edc85deaa9815995075.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a331b5a0a2fa47c9aa8a3e2b456ff104.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/375bfa2605a94c6cac181892843e53ea.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3a545e97474c48fbaeda4e65f63c7421.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/00f087d19d6e42099964938cdefa0e58.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c52b79f38d9448929963413ed809e91a.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/58ec91eea3eb47cdaf842ec87fe306bc.png">
+<meta property="article:published_time" content="2022-07-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-07-25T05:27:10.860Z">
 <meta property="article:author" content="未入流的小邹">
-<meta property="article:tag" content="WEB">
-<meta property="article:tag" content="微信小程序">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20210708171011749.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/1329afd6dbd149f98e104c10b0a455ea.png">
   
     <link rel="alternative" href="/atom.xml" title="未入流的小邹博客" type="application/atom+xml">
   
@@ -221,14 +163,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-微信小程序学习(四)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-uni-app简易商城" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      微信小程序学习(四)
+      Uni-app简易商城
     </h1>
   
 
@@ -243,52 +185,25 @@
   </a>
 
         
-        <a href="/2021/07/15/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/" class="archive-article-date">
-  	<time datetime="2021-07-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-15</time>
+        <a href="/2022/07/25/uni-app%E7%AE%80%E6%98%93%E5%95%86%E5%9F%8E/" class="archive-article-date">
+  	<time datetime="2022-07-24T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本人学习视频为黑马程序员，视频连接为：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nE41117BQ?p=1">B 站黑马程序员</a></p>
-<h1 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h1><p><img src="https://img-blog.csdnimg.cn/20210708171011749.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+        <h3 id="本人所学视频为-黑马程序员"><a href="#本人所学视频为-黑马程序员" class="headerlink" title="本人所学视频为:黑马程序员"></a>本人所学视频为:<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BJ411W7pX?spm_id_from=333.337.top_right_bar_window_custom_collection.content.click&vd_source=ed0298f43a56abb5d3ca088355bb4c01">黑马程序员</a></h3><p><strong>&#x3D;&#x3D;uniapp后端接口文档&#x3D;&#x3D;</strong><br><strong>这里本人的选择是B站情话微微田的接口。可以去视频的评论区去下载</strong></p>
 <span id="more"></span>
-
-<p><img src="https://img-blog.csdnimg.cn/20210708171152934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="开放功能"><a href="#开放功能" class="headerlink" title="开放功能"></a>开放功能</h2><p><img src="https://img-blog.csdnimg.cn/20210708203626314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708204232135.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708204513355.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708204755667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>&#x3D;&#x3D;这个接口已经不能使用了&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/20210708204856444.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/202107082207126.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>以下需要将自己的测试号改为 APPID<br><img src="https://img-blog.csdnimg.cn/20210708220840174.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708221320650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/202107082214407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20210708221100147.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708221537323.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="ICON"><a href="#ICON" class="headerlink" title="ICON"></a>ICON</h1><p>图标，组件默认长度单位为 px，2.4.0 起支持传入单位（rpx&#x2F;px）<br><img src="https://img-blog.csdnimg.cn/20210708233209694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708233527778.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708234906120.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210708234959732.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="Checkbox"><a href="#Checkbox" class="headerlink" title="Checkbox"></a>Checkbox</h1><p>使用方法与 radio 类似<br><img src="https://img-blog.csdnimg.cn/20210709000913202.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210709001713450.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a>自定义组件</h1><h2 id="创建自定义组件"><a href="#创建自定义组件" class="headerlink" title="创建自定义组件"></a>创建自定义组件</h2><p>类似于页面，一个自定义组件由 json wxml wxss js 4 个文件组成<br><img src="https://img-blog.csdnimg.cn/20210709165108465.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210709170144173.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="实现自定义组件的功能"><a href="#实现自定义组件的功能" class="headerlink" title="实现自定义组件的功能"></a>实现自定义组件的功能</h2><p><img src="https://img-blog.csdnimg.cn/20210709205831153.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210709220122706.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="CSS-文件"><a href="#CSS-文件" class="headerlink" title="CSS 文件"></a>CSS 文件</h2><p><img src="https://img-blog.csdnimg.cn/20210709220916705.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="WXML"><a href="#WXML" class="headerlink" title="WXML"></a>WXML</h2><p><img src="https://img-blog.csdnimg.cn/20210709221922167.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="实现点击切换文字颜色逻辑"><a href="#实现点击切换文字颜色逻辑" class="headerlink" title="实现点击切换文字颜色逻辑"></a>实现点击切换文字颜色逻辑</h2><p><img src="https://img-blog.csdnimg.cn/20210709222206597.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="父向子传递数据"><a href="#父向子传递数据" class="headerlink" title="父向子传递数据"></a>父向子传递数据</h2><p><strong>例子：1.首先在父页面中加入需要传递的数据到子标签中</strong><br><img src="https://img-blog.csdnimg.cn/20210709223650359.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>2.在子组件.js 文件中接收父传过来的数据</strong><br><img src="https://img-blog.csdnimg.cn/20210709223750835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>3.最后在子页面当中显示</strong><br><img src="https://img-blog.csdnimg.cn/20210709223825632.png" alt="在这里插入图片描述"><br>同理上述的文字也是一样<br><img src="https://img-blog.csdnimg.cn/20210709224203664.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2021070922421643.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210709224229388.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="子组件向父组件传递数据（通过事件）"><a href="#子组件向父组件传递数据（通过事件）" class="headerlink" title="子组件向父组件传递数据（通过事件）"></a>子组件向父组件传递数据（通过事件）</h2><p><img src="https://img-blog.csdnimg.cn/20210709225347991.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>在子组件.js 中</strong><br><img src="https://img-blog.csdnimg.cn/2021070923332989.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>在父 wxml 中</strong><br><img src="https://img-blog.csdnimg.cn/20210709233450360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在父 js 文件当中<br><img src="https://img-blog.csdnimg.cn/20210709233533200.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="SLOT（插槽）"><a href="#SLOT（插槽）" class="headerlink" title="SLOT（插槽）"></a>SLOT（插槽）</h1><p><img src="https://img-blog.csdnimg.cn/20210710001740590.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210710002157373.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h2><p><img src="https://img-blog.csdnimg.cn/20210710002501938.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="应用的生命周期"><a href="#应用的生命周期" class="headerlink" title="应用的生命周期"></a>应用的生命周期</h1><h2 id="onLaunch"><a href="#onLaunch" class="headerlink" title="onLaunch"></a>onLaunch</h2><p><img src="https://img-blog.csdnimg.cn/20210710101646977.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onShow"><a href="#onShow" class="headerlink" title="onShow"></a>onShow</h2><p><img src="https://img-blog.csdnimg.cn/20210710101852394.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onHide"><a href="#onHide" class="headerlink" title="onHide"></a>onHide</h2><p><img src="https://img-blog.csdnimg.cn/2021071010251017.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onError"><a href="#onError" class="headerlink" title="onError"></a>onError</h2><p><img src="https://img-blog.csdnimg.cn/20210711112711649.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210711112814679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onPageNotFound"><a href="#onPageNotFound" class="headerlink" title="onPageNotFound"></a>onPageNotFound</h2><p><img src="https://img-blog.csdnimg.cn/2021071111573434.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20210711114452974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20210711115715278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210711121747967.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="页面生命周期"><a href="#页面生命周期" class="headerlink" title="页面生命周期"></a>页面生命周期</h1><p><img src="https://img-blog.csdnimg.cn/20210711130145975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="data"><a href="#data" class="headerlink" title="data"></a>data</h2><p><img src="https://img-blog.csdnimg.cn/20210711144125812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onLoad"><a href="#onLoad" class="headerlink" title="onLoad"></a>onLoad</h2><p>相当于应用的 onlunch<br><img src="https://img-blog.csdnimg.cn/20210711144205860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onshow"><a href="#onshow" class="headerlink" title="onshow"></a>onshow</h2><p><img src="https://img-blog.csdnimg.cn/2021071114422882.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onready"><a href="#onready" class="headerlink" title="onready"></a>onready</h2><p><img src="https://img-blog.csdnimg.cn/20210711144256891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onhide"><a href="#onhide" class="headerlink" title="onhide"></a>onhide<img src="https://img-blog.csdnimg.cn/20210711144502755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></h2><p><img src="https://img-blog.csdnimg.cn/20210711145302841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onunload"><a href="#onunload" class="headerlink" title="onunload"></a>onunload</h2><p><img src="https://img-blog.csdnimg.cn/20210711145757583.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210711145834909.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onPullDownRefresh"><a href="#onPullDownRefresh" class="headerlink" title="onPullDownRefresh"></a>onPullDownRefresh</h2><p><img src="https://img-blog.csdnimg.cn/20210711145958375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onReachBottom"><a href="#onReachBottom" class="headerlink" title="onReachBottom"></a>onReachBottom</h2><p><img src="https://img-blog.csdnimg.cn/20210711150336774.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onShareAppMessage"><a href="#onShareAppMessage" class="headerlink" title="onShareAppMessage"></a>onShareAppMessage</h2><p><img src="https://img-blog.csdnimg.cn/20210711150447987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onPageScroll"><a href="#onPageScroll" class="headerlink" title="onPageScroll"></a>onPageScroll</h2><p><img src="https://img-blog.csdnimg.cn/20210711150711357.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onResize"><a href="#onResize" class="headerlink" title="onResize"></a>onResize</h2><p><img src="https://img-blog.csdnimg.cn/20210711151753926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210711151939519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="onTabItemTap"><a href="#onTabItemTap" class="headerlink" title="onTabItemTap"></a>onTabItemTap</h2><p><img src="https://img-blog.csdnimg.cn/20210711153023637.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2021071115305144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pvdXppMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/1329afd6dbd149f98e104c10b0a455ea.png" alt="在这里插入图片描述"></p>
+<h3 id="uni-app页面源码：github"><a href="#uni-app页面源码：github" class="headerlink" title="uni-app页面源码：github"></a>uni-app页面源码：<a target="_blank" rel="noopener" href="https://github.com/zihong135/uni-appeasyshop">github</a></h3><h1 id="Uniapp简易商城图演示"><a href="#Uniapp简易商城图演示" class="headerlink" title="Uniapp简易商城图演示"></a>Uniapp简易商城图演示</h1><h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><p><img src="https://img-blog.csdnimg.cn/cc9333000a3f4480967c76d77b3de614.png" alt="在这里插入图片描述"></p>
+<h2 id="商品列表页面"><a href="#商品列表页面" class="headerlink" title="商品列表页面"></a>商品列表页面</h2><p><img src="https://img-blog.csdnimg.cn/e0858ed6e1284edc85deaa9815995075.png" alt="在这里插入图片描述"></p>
+<h2 id="商品详情页面"><a href="#商品详情页面" class="headerlink" title="商品详情页面"></a>商品详情页面</h2><p><img src="https://img-blog.csdnimg.cn/a331b5a0a2fa47c9aa8a3e2b456ff104.png" alt="在这里插入图片描述"></p>
+<h2 id="联系我们"><a href="#联系我们" class="headerlink" title="联系我们"></a>联系我们</h2><p><img src="https://img-blog.csdnimg.cn/375bfa2605a94c6cac181892843e53ea.png" alt="在这里插入图片描述"></p>
+<h2 id="社区图片"><a href="#社区图片" class="headerlink" title="社区图片"></a>社区图片</h2><p><img src="https://img-blog.csdnimg.cn/3a545e97474c48fbaeda4e65f63c7421.png" alt="在这里插入图片描述"></p>
+<h2 id="咨询页面"><a href="#咨询页面" class="headerlink" title="咨询页面"></a>咨询页面</h2><p><img src="https://img-blog.csdnimg.cn/00f087d19d6e42099964938cdefa0e58.png" alt="在这里插入图片描述"></p>
+<h2 id="咨询详情页面"><a href="#咨询详情页面" class="headerlink" title="咨询详情页面"></a>咨询详情页面</h2><p><img src="https://img-blog.csdnimg.cn/c52b79f38d9448929963413ed809e91a.png" alt="在这里插入图片描述"></p>
+<h2 id="地图配置"><a href="#地图配置" class="headerlink" title="地图配置"></a>地图配置</h2><p><strong>需要在manifest.json中配置腾讯地图或其他地图的Key，具体的key要去相应的官网之中注册</strong><br><img src="https://img-blog.csdnimg.cn/58ec91eea3eb47cdaf842ec87fe306bc.png" alt="在这里插入图片描述"></p>
 
       
  <!-- 《添加版权声明 -->
@@ -306,16 +221,16 @@
     
     <br>
     <strong class="create-time">发布时间：</strong>
-    2021-07-15
+    2022-07-25
     <br>
     <strong class="update-time">最后更新：</strong>
-    2022-06-28
+    2022-07-25
     <br>
     <strong class="article-titles">本文标题：</strong>
-    <a href="https://zihong135.github.io/2021/07/15/微信小程序学习(四)/" title="微信小程序学习(四)" target="_blank">微信小程序学习(四)</a>
+    <a href="https://zihong135.github.io/2022/07/25/uni-app简易商城/" title="Uni-app简易商城" target="_blank">Uni-app简易商城</a>
     <br>
     <strong class="article-url">本文链接：</strong>
-    <a href="https://zihong135.github.io/2021/07/15/微信小程序学习(四)/" title="微信小程序学习(四)" target="_blank">https://zihong135.github.io/2021/07/15/微信小程序学习(四)/</a>
+    <a href="https://zihong135.github.io/2022/07/25/uni-app简易商城/" title="Uni-app简易商城" target="_blank">https://zihong135.github.io/2022/07/25/uni-app简易商城/</a>
     <br>
     <strong class="copyright">版权声明：</strong>
     本作品采用
@@ -336,21 +251,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WEB</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
@@ -361,7 +261,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端/小程序//" class="article-tag-list-link color4">小程序</a>
+        			<a href="/categories/前端/uni//" class="article-tag-list-link color4">uni</a>
         		</li>
       		
 		</ul>
@@ -416,7 +316,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zihong135.github.io/2021/07/15/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zihong135.github.io/2022/07/25/uni-app%E7%AE%80%E6%98%93%E5%95%86%E5%9F%8E/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -430,18 +330,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          React学习(一)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/07/08/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%B8%89)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">微信小程序学习(三)</div>
+    <a href="/2022/07/22/uniapp%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Uni-app学习</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -468,7 +359,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Button"><span class="toc-number">1.</span> <span class="toc-text">Button</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E6%94%BE%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.</span> <span class="toc-text">开放功能</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ICON"><span class="toc-number">2.</span> <span class="toc-text">ICON</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Checkbox"><span class="toc-number">3.</span> <span class="toc-text">Checkbox</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text">自定义组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6"><span class="toc-number">4.1.</span> <span class="toc-text">创建自定义组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-number">4.2.</span> <span class="toc-text">实现自定义组件的功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E6%96%87%E4%BB%B6"><span class="toc-number">4.3.</span> <span class="toc-text">CSS 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WXML"><span class="toc-number">4.4.</span> <span class="toc-text">WXML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E7%82%B9%E5%87%BB%E5%88%87%E6%8D%A2%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2%E9%80%BB%E8%BE%91"><span class="toc-number">4.5.</span> <span class="toc-text">实现点击切换文字颜色逻辑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%B6%E5%90%91%E5%AD%90%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE"><span class="toc-number">4.6.</span> <span class="toc-text">父向子传递数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%90%E7%BB%84%E4%BB%B6%E5%90%91%E7%88%B6%E7%BB%84%E4%BB%B6%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE%EF%BC%88%E9%80%9A%E8%BF%87%E4%BA%8B%E4%BB%B6%EF%BC%89"><span class="toc-number">4.7.</span> <span class="toc-text">子组件向父组件传递数据（通过事件）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SLOT%EF%BC%88%E6%8F%92%E6%A7%BD%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">SLOT（插槽）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B1%9E%E6%80%A7"><span class="toc-number">5.1.</span> <span class="toc-text">其他属性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">6.</span> <span class="toc-text">应用的生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#onLaunch"><span class="toc-number">6.1.</span> <span class="toc-text">onLaunch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onShow"><span class="toc-number">6.2.</span> <span class="toc-text">onShow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onHide"><span class="toc-number">6.3.</span> <span class="toc-text">onHide</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onError"><span class="toc-number">6.4.</span> <span class="toc-text">onError</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onPageNotFound"><span class="toc-number">6.5.</span> <span class="toc-text">onPageNotFound</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">7.</span> <span class="toc-text">页面生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#data"><span class="toc-number">7.1.</span> <span class="toc-text">data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onLoad"><span class="toc-number">7.2.</span> <span class="toc-text">onLoad</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onshow"><span class="toc-number">7.3.</span> <span class="toc-text">onshow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onready"><span class="toc-number">7.4.</span> <span class="toc-text">onready</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onhide"><span class="toc-number">7.5.</span> <span class="toc-text">onhide</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onunload"><span class="toc-number">7.6.</span> <span class="toc-text">onunload</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onPullDownRefresh"><span class="toc-number">7.7.</span> <span class="toc-text">onPullDownRefresh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onReachBottom"><span class="toc-number">7.8.</span> <span class="toc-text">onReachBottom</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onShareAppMessage"><span class="toc-number">7.9.</span> <span class="toc-text">onShareAppMessage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onPageScroll"><span class="toc-number">7.10.</span> <span class="toc-text">onPageScroll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onResize"><span class="toc-number">7.11.</span> <span class="toc-text">onResize</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#onTabItemTap"><span class="toc-number">7.12.</span> <span class="toc-text">onTabItemTap</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E4%BA%BA%E6%89%80%E5%AD%A6%E8%A7%86%E9%A2%91%E4%B8%BA-%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98"><span class="toc-number">1.</span> <span class="toc-text">本人所学视频为:黑马程序员</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#uni-app%E9%A1%B5%E9%9D%A2%E6%BA%90%E7%A0%81%EF%BC%9Agithub"><span class="toc-number">2.</span> <span class="toc-text">uni-app页面源码：github</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Uniapp%E7%AE%80%E6%98%93%E5%95%86%E5%9F%8E%E5%9B%BE%E6%BC%94%E7%A4%BA"><span class="toc-number"></span> <span class="toc-text">Uniapp简易商城图演示</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5"><span class="toc-number"></span> <span class="toc-text">首页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2"><span class="toc-number"></span> <span class="toc-text">商品列表页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2"><span class="toc-number"></span> <span class="toc-text">商品详情页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC"><span class="toc-number"></span> <span class="toc-text">联系我们</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BE%E5%8C%BA%E5%9B%BE%E7%89%87"><span class="toc-number"></span> <span class="toc-text">社区图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%A8%E8%AF%A2%E9%A1%B5%E9%9D%A2"><span class="toc-number"></span> <span class="toc-text">咨询页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%A8%E8%AF%A2%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2"><span class="toc-number"></span> <span class="toc-text">咨询详情页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%B0%E5%9B%BE%E9%85%8D%E7%BD%AE"><span class="toc-number"></span> <span class="toc-text">地图配置</span></a>
                     </div>
                 </span>
             </div>
@@ -501,7 +392,7 @@ if(true){
     repo: 'zihong135.github.io',
     owner: 'zihong135',
     admin: ['zihong135'],
-    id: 'Thu Jul 15 2021 00:00:00 GMT+0800',
+    id: 'Mon Jul 25 2022 00:00:00 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
