@@ -6,61 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zihong135.github.io">
-  <title>React学习(二) | 未入流的小邹博客</title>
+  <title>typescript学习(一) | 未入流的小邹博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本人学习视频为B站尚硅谷，视频连接为：尚硅谷React">
+  <meta name="description" content="TypeScript是什么？1.一个以JavaScript为基础构建的语言，是JavaScript的超集。2.它对JS进行了扩展，向JS中引入了类型的概念，并添加了许多新的特性。3.它可以在任何支持JavaScript的平台上执行，不过不能直接被JS引擎执行，需要转化成JS代码。4. TS完全兼容JS，换言之，任何的JS代码都可以直接当成JS使用。5. 相较于JS而言，TS拥有了静态类型，更加严格">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React学习(二)">
-<meta property="og:url" content="https://zihong135.github.io/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+<meta property="og:title" content="typescript学习(一)">
+<meta property="og:url" content="https://zihong135.github.io/2022/07/30/typescript%E5%AD%A6%E4%B9%A0(%E4%B8%80)/index.html">
 <meta property="og:site_name" content="未入流的小邹博客">
-<meta property="og:description" content="本人学习视频为B站尚硅谷，视频连接为：尚硅谷React">
+<meta property="og:description" content="TypeScript是什么？1.一个以JavaScript为基础构建的语言，是JavaScript的超集。2.它对JS进行了扩展，向JS中引入了类型的概念，并添加了许多新的特性。3.它可以在任何支持JavaScript的平台上执行，不过不能直接被JS引擎执行，需要转化成JS代码。4. TS完全兼容JS，换言之，任何的JS代码都可以直接当成JS使用。5. 相较于JS而言，TS拥有了静态类型，更加严格">
 <meta property="og:locale">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/4ae8b000063047e4bff532d0c942de82.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/5868d3fe03764ef983cbe0b1b77b27cf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/f63149383e2242b58ccfdfd3e54c206c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/9fbd2f16a28048dab82602af22ee1e48.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/1e54938c4eeb4927a9331fecd9fd298a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/a44adf7ca1d0470592d5ece3bbde39d4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/03e421be132248d7b5c6dc0781553ac1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c394a1ada36e42f295463c2eccb4be84.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/3217fe9cc68e4986b59935328b9a8f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/8568de2f1ceb4bcdae2f0a38659561d7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c32877eeff964682990019644fd1ec9b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_12,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c94d306a2c7b46fc803db7d8064de6dd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/f4e746e454104d40ad4a151b11c98ece.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/4413ffc322d24b75a2413f9d4ebec22a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e954239c964b4657a2b69879ce12f137.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/cf845f3791c1442186558d06a1126cb2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/8a0c26b8321b463390ac605106e4c069.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e2acf740e43c46c7bb16fd8ceec2a904.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/557639f025aa41cc8c6eeb10951b58a6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/46d37798bdc2432b9871e166e87f2986.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/0d2757dbdbd04a27824c2948cd53e833.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/df0056f9d3784503bd802274aab42f89.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_13,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/193b204fd0324eb39a2fb1c17409573a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/5b2d13206ff446afa8175b11a299bc1d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/d3635a4c713b45249ae50d433172ec76.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/da523f42a8ce4b56b55e3b69d3793342.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/64222a0885734834946ebe7b36b264b7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/dce8a302ffd14162b9f0a2e43480cec4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/57be75ee62584e689ff775eabad371e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_11,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/6f92a4f79c6e4ab6adf7c391e51c5f4b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/4ed8983564fb4f4dbbda80c1de06f528.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/54c793ce6b2947649783cffef929c091.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e2e80631fccd459595473dcaf264e3f4.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/7ff2b27e71c8409d9399563c621d5c5c.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/db8c803f404d4466933bb130c35050db.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/a5b9713261d84d60b3a405ebe95e6f86.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c6455fad957b4e3e831664c51b372130.png">
-<meta property="article:published_time" content="2022-02-13T02:46:27.685Z">
-<meta property="article:modified_time" content="2022-06-04T13:35:26.524Z">
+<meta property="article:published_time" content="2022-07-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-07-31T09:19:30.344Z">
 <meta property="article:author" content="未入流的小邹">
-<meta property="article:tag" content="React">
-<meta property="article:tag" content="WEB">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/4ae8b000063047e4bff532d0c942de82.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
   
     <link rel="alternative" href="/atom.xml" title="未入流的小邹博客" type="application/atom+xml">
   
@@ -195,14 +153,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-React学习（二）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-typescript学习(一)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      React学习(二)
+      typescript学习(一)
     </h1>
   
 
@@ -217,103 +175,202 @@
   </a>
 
         
-        <a href="/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2022-02-13T02:46:27.685Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-13</time>
+        <a href="/2022/07/30/typescript%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" class="archive-article-date">
+  	<time datetime="2022-07-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本人学习视频为B站尚硅谷，视频连接为：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wy4y1D7JT?p=1">尚硅谷React</a></p>
+        <h1 id="TypeScript是什么？"><a href="#TypeScript是什么？" class="headerlink" title="TypeScript是什么？"></a>TypeScript是什么？</h1><p><strong>1.一个以JavaScript为基础构建的语言，是JavaScript的超集。<br>2.它对JS进行了扩展，向JS中引入了类型的概念，并添加了许多新的特性。<br>3.它可以在任何支持JavaScript的平台上执行，不过不能直接被JS引擎执行，需要转化成JS代码。<br>4. TS完全兼容JS，换言之，任何的JS代码都可以直接当成JS使用。<br>5. 相较于JS而言，TS拥有了静态类型，更加严格的语法，更强大的功能；TS可以在代码执行前就完成代码的检查，减小了运行时异常的出现的几率；TS代码可以编译为任意版本的JS代码，可有效解决不同JS运行环境的兼容问题；同样的功能，TS的代码量要大于JS，但由于TS的代码结构更加清晰，变量类型更加明确，在后期代码的维护中TS却远远胜于JS。</strong> </p>
 <span id="more"></span>
-<h1 id="受控组件和非受控组件"><a href="#受控组件和非受控组件" class="headerlink" title="受控组件和非受控组件"></a>受控组件和非受控组件</h1><h2 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h2><p>一般是现用现取，即需要用的时候通过ref进行传递<br><img src="https://img-blog.csdnimg.cn/4ae8b000063047e4bff532d0c942de82.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/5868d3fe03764ef983cbe0b1b77b27cf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="非受控组件"><a href="#非受控组件" class="headerlink" title="非受控组件"></a>非受控组件</h2><p>即输入时就可以查看输入内容并通过state状态保存<br><img src="https://img-blog.csdnimg.cn/f63149383e2242b58ccfdfd3e54c206c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/9fbd2f16a28048dab82602af22ee1e48.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h2><h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><p><strong>高阶函数：如果一个函数符合下面2个规范中的任何一个，那该函数就是高阶函数。<br>1.若A函数，接收的参数是一个函数，那么A就可以称之为高阶函数。<br>2.若A函数，调用的返回值依然是一个函数，那么A就可以称之为高阶函数。<br>常见的高阶函数有：Promise、setTimeout、arr.map()等等</strong></p>
-<h3 id="函数柯里化"><a href="#函数柯里化" class="headerlink" title="函数柯里化"></a>函数柯里化</h3><p><strong>函数的柯里化：通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式。</strong><br>    <strong>function sum(a){<br>                            return(b)&#x3D;&gt;{<br>                                return (c)&#x3D;&gt;{<br>                                    return a+b+c<br>                                }<br>                            }<br>                        }</strong><br>&#x3D;&#x3D;[dataType]是变量，而少去[]则是相当于’dataType’是字符串形式传入&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/1e54938c4eeb4927a9331fecd9fd298a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="不用柯里化实现非受控"><a href="#不用柯里化实现非受控" class="headerlink" title="不用柯里化实现非受控"></a>不用柯里化实现非受控</h3><p><img src="https://img-blog.csdnimg.cn/a44adf7ca1d0470592d5ece3bbde39d4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h1 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h1><ol>
-<li>组件从创建到死亡它会经历一些特定的阶段。</li>
-<li>React组件中包含一系列勾子函数(生命周期回调函数), 会在特定的时刻调用。</li>
-<li>我们在定义组件时，会在特定的生命周期回调函数中，做特定的工作。<br><img src="https://img-blog.csdnimg.cn/03e421be132248d7b5c6dc0781553ac1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/c394a1ada36e42f295463c2eccb4be84.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/3217fe9cc68e4986b59935328b9a8f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>&#x3D;&#x3D;点击按钮卸载组件&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/8568de2f1ceb4bcdae2f0a38659561d7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><h2 id="生命周期（旧）"><a href="#生命周期（旧）" class="headerlink" title="生命周期（旧）"></a>生命周期（旧）</h2><img src="https://img-blog.csdnimg.cn/c32877eeff964682990019644fd1ec9b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_12,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><h3 id="初始化阶段-由ReactDOM-render-触发—初次渲染"><a href="#初始化阶段-由ReactDOM-render-触发—初次渲染" class="headerlink" title="初始化阶段: 由ReactDOM.render()触发—初次渲染"></a>初始化阶段: 由ReactDOM.render()触发—初次渲染</h3></li>
-<li>constructor()</li>
-<li>componentWillMount()</li>
-<li>render()</li>
-<li>componentDidMount()<br><img src="https://img-blog.csdnimg.cn/c94d306a2c7b46fc803db7d8064de6dd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/f4e746e454104d40ad4a151b11c98ece.png" alt="在这里插入图片描述"></li>
-</ol>
-<p><img src="https://img-blog.csdnimg.cn/4413ffc322d24b75a2413f9d4ebec22a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="更新阶段-由组件内部this-setSate触发"><a href="#更新阶段-由组件内部this-setSate触发" class="headerlink" title="更新阶段: 由组件内部this.setSate触发"></a>更新阶段: 由组件内部this.setSate触发</h3><ol>
-<li>shouldComponentUpdate()</li>
-<li>componentWillUpdate()</li>
-<li>render() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 必须使用的一个</li>
-<li>componentDidUpdate()<br><img src="https://img-blog.csdnimg.cn/e954239c964b4657a2b69879ce12f137.png" alt="在这里插入图片描述"><br>&#x3D;&#x3D;如果阀门函数返回的是false则无法进行更新&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/cf845f3791c1442186558d06a1126cb2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><h3 id="强制更新阶段"><a href="#强制更新阶段" class="headerlink" title="强制更新阶段"></a>强制更新阶段</h3></li>
-<li>componentWillUpdate()</li>
-<li>render() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 必须使用的一个</li>
-<li>componentDidUpdate()<br><img src="https://img-blog.csdnimg.cn/8a0c26b8321b463390ac605106e4c069.png" alt="在这里插入图片描述"><h3 id="更新阶段-由父组件render触发"><a href="#更新阶段-由父组件render触发" class="headerlink" title="更新阶段: 由父组件render触发"></a>更新阶段: 由父组件render触发</h3></li>
-</ol>
-<p>1.componentWillReceiveProps<br>2.    shouldComponentUpdate()<br>3.    componentWillUpdate()<br>4.    render() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 必须使用的一个<br>5.    componentDidUpdate()<br>&#x3D;&#x3D;<strong>componentWillReceiveProps这个是接收到新的参数才调用，第一次初始化render是不会调用</strong>&#x3D;&#x3D;</p>
-<p><img src="https://img-blog.csdnimg.cn/e2acf740e43c46c7bb16fd8ceec2a904.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/557639f025aa41cc8c6eeb10951b58a6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/46d37798bdc2432b9871e166e87f2986.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/0d2757dbdbd04a27824c2948cd53e833.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="生命周期（新）"><a href="#生命周期（新）" class="headerlink" title="生命周期（新）"></a>生命周期（新）</h2><p>&#x3D;&#x3D;新生命周期在React17版本以上适用，删除了原来的componentWillMount()，componentWillUpdate()，componentWillReceiveProps（）阶段，新增了getDerivedStateFromProps（）和getSnapshotBeforeUpdate（）阶段，并如下图所示：<br><img src="https://img-blog.csdnimg.cn/df0056f9d3784503bd802274aab42f89.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_13,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="初始化阶段-由ReactDOM-render-触发—初次渲染-1"><a href="#初始化阶段-由ReactDOM-render-触发—初次渲染-1" class="headerlink" title="初始化阶段: 由ReactDOM.render()触发—初次渲染"></a>初始化阶段: 由ReactDOM.render()触发—初次渲染</h3><p><strong>1.    constructor()<br>2.    getDerivedStateFromProps<br>3.    render()<br>4.    componentDidMount() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 常用<br>一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息</strong><br><img src="https://img-blog.csdnimg.cn/193b204fd0324eb39a2fb1c17409573a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/5b2d13206ff446afa8175b11a299bc1d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/d3635a4c713b45249ae50d433172ec76.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="更新之前"><a href="#更新之前" class="headerlink" title="更新之前"></a>更新之前</h3><p><strong>初始化阶段: 由ReactDOM.render()触发—初次渲染</strong></p>
+<h1 id="TypeScript-开发环境搭建"><a href="#TypeScript-开发环境搭建" class="headerlink" title="TypeScript 开发环境搭建"></a>TypeScript 开发环境搭建</h1><p><strong>1. 下载Node.js并安装<br>    64位：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v14.15.1/node-v14.15.1-x64.msi">https://nodejs.org/dist/v14.15.1/node-v14.15.1-x64.msi</a><br>   32位：<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v14.15.1/node-v14.15.1-x86.msi">https://nodejs.org/dist/v14.15.1/node-v14.15.1-x86.msi</a><br>2. 使用npm全局安装typescript<br>   进入命令行<br>   输入：npm i -g typescript<br>   输入:tsc  查看是否安装成功<br>3. 创建一个ts文件<br>4. 使用tsc对ts文件进行编译<br>   进入命令行<br>   进入ts文件所在目录<br>   执行命令：tsc xxx.ts</strong></p>
+<h1 id="TypeScript基本类型"><a href="#TypeScript基本类型" class="headerlink" title="TypeScript基本类型"></a>TypeScript基本类型</h1><ul>
+<li><p>类型声明</p>
+<ul>
+<li><p>类型声明是TS非常重要的一个特点</p>
+</li>
+<li><p>通过类型声明可以指定TS中变量（参数、形参）的类型</p>
+</li>
+<li><p>指定类型后，当为变量赋值时，TS编译器会自动检查值是否符合类型声明，符合则赋值，否则报错</p>
+</li>
+<li><p>简而言之，类型声明给变量设置了类型，使得变量只能存储某种类型的值</p>
+</li>
+</ul>
+</li>
+<li><p>自动类型判断</p>
+<ul>
+<li>TS拥有自动的类型判断机制</li>
+<li>当对变量的声明和赋值是同时进行的，TS编译器会自动判断变量的类型</li>
+<li>所以如果你的变量的声明和赋值时同时进行的，可以省略掉类型声明</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明一个变量a，同时指定它的类型为number</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">a</span>: <span class="built_in">number</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// a 的类型设置为了number，在以后的使用过程中a的值只能是数字</span></span><br><span class="line">a = <span class="number">10</span>;</span><br><span class="line">a = <span class="string">&#x27;hello&#x27;</span>; <span class="comment">// 此行代码会报错，因为变量a的类型是number，不能赋值字符串</span></span><br><span class="line"><span class="comment">// 声明完变量直接进行赋值</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">b</span>: <span class="built_in">boolean</span> = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 如果变量的声明和赋值是同时进行的，TS可以自动对变量进行类型检测</span></span><br><span class="line"><span class="keyword">let</span> c = <span class="literal">false</span>;</span><br><span class="line">c = <span class="literal">true</span>;</span><br><span class="line"><span class="comment">// JS中的函数是不考虑参数的类型和个数的</span></span><br><span class="line"><span class="comment">// function sum(a, b)&#123;</span></span><br><span class="line"><span class="comment">//     return a + b;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="comment">// console.log(sum(123, 456)); // 579</span></span><br><span class="line"><span class="comment">// console.log(sum(123, &quot;456&quot;)); // &quot;123456&quot;</span></span><br><span class="line"><span class="comment">//在typescript中会提醒参数个数与类型</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">sum</span>(<span class="params">a: <span class="built_in">number</span>, b: <span class="built_in">number</span></span>): <span class="built_in">number</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> result = <span class="title function_">sum</span>(<span class="number">123</span>, <span class="number">456</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="所有类型展示"><a href="#所有类型展示" class="headerlink" title="所有类型展示"></a>所有类型展示</h2><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">例子</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">number</td>
+<td align="center">1, -33, 2.5</td>
+<td align="center">任意数字</td>
+</tr>
+<tr>
+<td align="center">string</td>
+<td align="center">‘hi’, “hi”, <code>hi</code></td>
+<td align="center">任意字符串</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">true、false</td>
+<td align="center">布尔值true或false</td>
+</tr>
+<tr>
+<td align="center">字面量</td>
+<td align="center">其本身</td>
+<td align="center">限制变量的值就是该字面量的值</td>
+</tr>
+<tr>
+<td align="center">any</td>
+<td align="center">*</td>
+<td align="center">任意类型</td>
+</tr>
+<tr>
+<td align="center">unknown</td>
+<td align="center">*</td>
+<td align="center">类型安全的any</td>
+</tr>
+<tr>
+<td align="center">void</td>
+<td align="center">空值（undefined）</td>
+<td align="center">没有值（或undefined）</td>
+</tr>
+<tr>
+<td align="center">never</td>
+<td align="center">没有值</td>
+<td align="center">不能是任何值</td>
+</tr>
+<tr>
+<td align="center">object</td>
+<td align="center">{name:’孙悟空’}</td>
+<td align="center">任意的JS对象</td>
+</tr>
+<tr>
+<td align="center">array</td>
+<td align="center">[1,2,3]</td>
+<td align="center">任意JS数组</td>
+</tr>
+<tr>
+<td align="center">tuple</td>
+<td align="center">[4,5]</td>
+<td align="center">元素，TS新增类型，固定长度数组</td>
+</tr>
+<tr>
+<td align="center">enum</td>
+<td align="center">enum{A, B}</td>
+<td align="center">枚举，TS中新增类型</td>
+</tr>
+<tr>
+<td align="center"><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">// 也可以直接使用字面量进行类型声明</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">a</span>: <span class="number">10</span>;</span><br><span class="line">a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 可以使用 | 来连接多个类型（联合类型）</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">b</span>: <span class="string">&quot;male&quot;</span> | <span class="string">&quot;female&quot;</span>;</span><br><span class="line">b = <span class="string">&quot;male&quot;</span>;</span><br><span class="line">b = <span class="string">&quot;female&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">c</span>: <span class="built_in">boolean</span> | <span class="built_in">string</span>;</span><br><span class="line">c = <span class="literal">true</span>;</span><br><span class="line">c = <span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// any 表示的是任意类型，一个变量设置类型为any后相当于对该变量关闭了TS的类型检测</span></span><br><span class="line"><span class="comment">// 使用TS时，不建议使用any类型</span></span><br><span class="line"><span class="comment">// let d: any;</span></span><br><span class="line"><span class="comment">// 声明变量如果不指定类型，则TS解析器会自动判断变量的类型为any （隐式的any）</span></span><br><span class="line"><span class="keyword">let</span> d;</span><br><span class="line">d = <span class="number">10</span>;</span><br><span class="line">d = <span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line">d = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// unknown 表示未知类型的值</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">e</span>: unknown;</span><br><span class="line">e = <span class="number">10</span>;</span><br><span class="line">e = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">e = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">s</span>:<span class="built_in">string</span>;</span><br><span class="line"><span class="comment">// d的类型是any，它可以赋值给任意变量</span></span><br><span class="line">s = d;</span><br><span class="line"></span><br><span class="line">e = <span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// unknown 实际上就是一个类型安全的any</span></span><br><span class="line"><span class="comment">// unknown类型的变量，不能直接赋值给其他变量</span></span><br><span class="line"><span class="comment">//如果直接赋值给变量s会报错因为变量不一致</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">typeof</span> e === <span class="string">&quot;string&quot;</span>)&#123;</span><br><span class="line">    s = e;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 类型断言，可以用来告诉解析器变量的实际类型</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 语法：</span></span><br><span class="line"><span class="comment">*   变量 as 类型</span></span><br><span class="line"><span class="comment">*   &lt;类型&gt;变量</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line">s = e <span class="keyword">as</span> <span class="built_in">string</span>;</span><br><span class="line">s = &lt;<span class="built_in">string</span>&gt;e;</span><br><span class="line"></span><br><span class="line"><span class="comment">// void 用来表示空，以函数为例，就表示没有返回值的函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params"></span>): <span class="built_in">void</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// never 表示永远不会返回结果</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fn2</span>(<span class="params"></span>): <span class="built_in">never</span>&#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">&#x27;报错了！&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// object表示一个js对象</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">a</span>: <span class="built_in">object</span>;</span><br><span class="line">a = &#123;&#125;;</span><br><span class="line">a = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// &#123;&#125; 用来指定对象中可以包含哪些属性</span></span><br><span class="line"><span class="comment">// 语法：&#123;属性名:属性值,属性名:属性值&#125;</span></span><br><span class="line"><span class="comment">// 在属性名后边加上?，表示属性是可选的</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">b</span>: &#123;<span class="attr">name</span>: <span class="built_in">string</span>, age?: <span class="built_in">number</span>&#125;;</span><br><span class="line">b = &#123;<span class="attr">name</span>: <span class="string">&#x27;孙悟空&#x27;</span>, <span class="attr">age</span>: <span class="number">18</span>&#125;;</span><br><span class="line"><span class="comment">// [propName: string] 代表属性名必须为string  any 表示任意类型的属性</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">c</span>: &#123;<span class="attr">name</span>: <span class="built_in">string</span>, [<span class="attr">propName</span>: <span class="built_in">string</span>]: <span class="built_in">any</span>&#125;;</span><br><span class="line">c = &#123;<span class="attr">name</span>: <span class="string">&#x27;猪八戒&#x27;</span>, <span class="attr">age</span>: <span class="number">18</span>, <span class="attr">gender</span>: <span class="string">&#x27;男&#x27;</span>&#125;;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*   设置函数结构的类型声明：</span></span><br><span class="line"><span class="comment">*       语法：(形参:类型, 形参:类型 ...) =&gt; 返回值</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">d</span>: <span class="function">(<span class="params">a: <span class="built_in">number</span> ,b: <span class="built_in">number</span></span>)=&gt;</span><span class="built_in">number</span>;</span><br><span class="line"><span class="comment">// d = function (n1: string, n2: string): number&#123;</span></span><br><span class="line"><span class="comment">//     return 10;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*   数组的类型声明：</span></span><br><span class="line"><span class="comment">*       类型[]</span></span><br><span class="line"><span class="comment">*       Array&lt;类型&gt;</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="comment">// string[] 表示字符串数组</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">e</span>: <span class="built_in">string</span>[];</span><br><span class="line">e = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>];</span><br><span class="line"><span class="keyword">let</span> <span class="attr">g</span>: <span class="title class_">Array</span>&lt;<span class="built_in">number</span>&gt;;</span><br><span class="line">g = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">*</span><br><span class="line">*   元组，元组就是固定长度的数组</span><br><span class="line">*       语法：[类型, 类型, 类型]</span><br><span class="line">* */</span><br><span class="line"><span class="keyword">let</span> <span class="attr">h</span>: [<span class="built_in">string</span>, <span class="built_in">number</span>];</span><br><span class="line">h = [<span class="string">&#x27;hello&#x27;</span>, <span class="number">123</span>];</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* enum 枚举</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="built_in">enum</span> <span class="title class_">Gender</span>&#123;</span><br><span class="line">    <span class="title class_">Male</span>,</span><br><span class="line">    <span class="title class_">Female</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">i</span>: &#123;<span class="attr">name</span>: <span class="built_in">string</span>, <span class="attr">gender</span>: <span class="title class_">Gender</span>&#125;;</span><br><span class="line">i = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;孙悟空&#x27;</span>,</span><br><span class="line">    <span class="attr">gender</span>: <span class="title class_">Gender</span>.<span class="property">Male</span> <span class="comment">// &#x27;male&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// console.log(i.gender === Gender.Male);</span></span><br><span class="line"><span class="comment">// &amp;表示同时</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">j</span>: &#123; <span class="attr">name</span>: <span class="built_in">string</span> &#125; &amp; &#123; <span class="attr">age</span>: <span class="built_in">number</span> &#125;;</span><br><span class="line"><span class="comment">// j = &#123;name: &#x27;孙悟空&#x27;, age: 18&#125;;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 类型的别名</span></span><br><span class="line"><span class="keyword">type</span> myType = <span class="number">1</span> | <span class="number">2</span> | <span class="number">3</span> | <span class="number">4</span> | <span class="number">5</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">k</span>: myType;</span><br><span class="line">k = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<h1 id="编译选项"><a href="#编译选项" class="headerlink" title="编译选项"></a>编译选项</h1><ul>
+<li><p>自动编译文件</p>
+<ul>
+<li>编译文件时，使用 -w 指令后，TS编译器会自动监视文件的变化，并在文件发生变化时对文件进行重新编译。</li>
+</ul>
+</li>
+<li><p>自动编译整个项目</p>
+<ul>
+<li><p>如果直接使用tsc指令，则可以自动将当前项目下的所有ts文件编译为js文件。</p>
+</li>
+<li><p>但是能直接使用tsc命令的前提时，要先在项目根目录下创建一个ts的配置文件 tsconfig.json</p>
+</li>
+<li><p>tsconfig.json是一个JSON文件，添加配置文件后，只需只需 tsc 命令即可完成对整个项目的编译</p>
+</li>
+<li><p>配置选项：</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  tsconfig.json是ts编译器的配置文件，ts编译器可以根据它的信息来对代码进行编译</span></span><br><span class="line"><span class="comment">    &quot;include&quot; 用来指定哪些ts文件需要被编译</span></span><br><span class="line"><span class="comment">      路径：** 表示任意目录</span></span><br><span class="line"><span class="comment">            * 表示任意文件</span></span><br><span class="line"><span class="comment">    &quot;exclude&quot; 不需要被编译的文件目录</span></span><br><span class="line"><span class="comment">        默认值：[&quot;node_modules&quot;, &quot;bower_components&quot;, &quot;jspm_packages&quot;]</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">  <span class="attr">&quot;include&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;./src/**/*&quot;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">    compilerOptions 编译器的选项</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// target 用来指定ts被编译为的ES的版本</span></span><br><span class="line">    <span class="comment">// &#x27;es3&#x27;, &#x27;es5&#x27;, &#x27;es6&#x27;, &#x27;es2015&#x27;, &#x27;es2016&#x27;, &#x27;es2017&#x27;, &#x27;es2018&#x27;, &#x27;es2019&#x27;, &#x27;es2020&#x27;, &#x27;esnext&#x27;</span></span><br><span class="line">    <span class="attr">&quot;target&quot;</span><span class="punctuation">:</span> <span class="string">&quot;es2015&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// module 指定要使用的模块化的规范</span></span><br><span class="line">    <span class="comment">// &#x27;none&#x27;, &#x27;commonjs&#x27;, &#x27;amd&#x27;, &#x27;system&#x27;, &#x27;umd&#x27;, &#x27;es6&#x27;, &#x27;es2015&#x27;, &#x27;es2020&#x27;, &#x27;esnext&#x27;</span></span><br><span class="line">    <span class="attr">&quot;module&quot;</span><span class="punctuation">:</span> <span class="string">&quot;es2015&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// lib用来指定项目中要使用的库</span></span><br><span class="line">    <span class="comment">//&#x27;es5&#x27;, &#x27;es6&#x27;, &#x27;es2015&#x27;, &#x27;es7&#x27;, &#x27;es2016&#x27;, &#x27;es2017&#x27;, &#x27;es</span></span><br><span class="line">    <span class="comment">//2018&#x27;, &#x27;es2019&#x27;, &#x27;es2020&#x27;, &#x27;esnext&#x27;, &#x27;dom&#x27;, &#x27;dom.iterable&#x27;, &#x27;webworker&#x27;, &#x27;webworker.importscripts&#x27;, &#x27;webworker.iterable&#x27;, &#x27;scri</span></span><br><span class="line">    <span class="comment">//pthost&#x27;, &#x27;es2015.core&#x27;, &#x27;es2015.collection&#x27;, &#x27;es2015.generator&#x27;, &#x27;es2015.iterable&#x27;, &#x27;es2015.promise&#x27;, &#x27;es2015.proxy&#x27;, &#x27;es2015.r</span></span><br><span class="line">    <span class="comment">//eflect&#x27;, &#x27;es2015.symbol&#x27;, &#x27;es2015.symbol.wellknown&#x27;, &#x27;es2016.array.include&#x27;, &#x27;es2017.object&#x27;, &#x27;es2017.sharedmemory&#x27;, &#x27;es2017.st</span></span><br><span class="line">    <span class="comment">//ring&#x27;, &#x27;es2017.intl&#x27;, &#x27;es2017.typedarrays&#x27;, &#x27;es2018.asyncgenerator&#x27;, &#x27;es2018.asynciterable&#x27;, &#x27;es2018.intl&#x27;, &#x27;es2018.promise&#x27;, &#x27;</span></span><br><span class="line">    <span class="comment">//es2018.regexp&#x27;, &#x27;es2019.array&#x27;, &#x27;es2019.object&#x27;, &#x27;es2019.string&#x27;, &#x27;es2019.symbol&#x27;, &#x27;es2020.bigint&#x27;, &#x27;es2020.promise&#x27;, &#x27;es2020.s</span></span><br><span class="line">    <span class="comment">//haredmemory&#x27;, &#x27;es2020.string&#x27;, &#x27;es2020.symbol.wellknown&#x27;, &#x27;es2020.intl&#x27;, &#x27;esnext.array&#x27;, &#x27;esnext.symbol&#x27;, &#x27;esnext.asynciterable</span></span><br><span class="line">    <span class="comment">//&#x27;, &#x27;esnext.intl&#x27;, &#x27;esnext.bigint&#x27;, &#x27;esnext.string&#x27;, &#x27;esnext.promise&#x27;, &#x27;esnext.weakref&#x27;</span></span><br><span class="line"><span class="comment">//    &quot;lib&quot;: [&quot;es6&quot;, &quot;dom&quot;]</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// outDir 用来指定编译后文件所在的目录</span></span><br><span class="line">    <span class="attr">&quot;outDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;./dist&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 将代码合并为一个文件</span></span><br><span class="line">    <span class="comment">// 设置outFile后，所有的全局作用域中的代码会合并到同一个文件中</span></span><br><span class="line">    <span class="comment">//&quot;outFile&quot;: &quot;./dist/app.js&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 是否对js文件进行编译，默认是false</span></span><br><span class="line"><span class="comment">//    &quot;allowJs&quot;: true,</span></span><br><span class="line">    <span class="comment">// 是否检查js代码是否符合语法规范，默认是false</span></span><br><span class="line"><span class="comment">//    &quot;checkJs&quot;: true,</span></span><br><span class="line">    <span class="comment">// 是否移除注释</span></span><br><span class="line">    <span class="attr">&quot;removeComments&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 不生成编译后的文件</span></span><br><span class="line">    <span class="attr">&quot;noEmit&quot;</span><span class="punctuation">:</span> <span class="keyword">false</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 当有错误时不生成编译后的文件</span></span><br><span class="line">    <span class="attr">&quot;noEmitOnError&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 所有严格检查的总开关</span></span><br><span class="line">    <span class="attr">&quot;strict&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 用来设置编译后的文件是否使用严格模式，默认false</span></span><br><span class="line">    <span class="attr">&quot;alwaysStrict&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 不允许隐式的any类型</span></span><br><span class="line">    <span class="attr">&quot;noImplicitAny&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 不允许不明确类型的this</span></span><br><span class="line">    <span class="attr">&quot;noImplicitThis&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 严格的检查空值</span></span><br><span class="line">    <span class="attr">&quot;strictNullChecks&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h1><p> 通常情况下，实际开发中我们都需要使用构建工具对代码进行打包，TS同样也可以结合构建工具一起使用，下边以webpack为例介绍一下如何结合构建工具使用TS。<br> 步骤：</p>
 <ol>
-<li>constructor()</li>
-<li>getDerivedStateFromProps </li>
-<li>render()</li>
-<li>componentDidMount() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 常用一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息</li>
+<li><p>初始化项目</p>
+<ul>
+<li>进入项目根目录，执行命令 <code>npm init -y</code><ul>
+<li>主要作用：创建package.json文件</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>下载构建工具</p>
+</li>
 </ol>
-<p><strong>更新阶段: 由组件内部this.setSate()或父组件重新render触发</strong><br>5.    getDerivedStateFromProps<br>6.    shouldComponentUpdate()<br>7.    render()<br>8.    getSnapshotBeforeUpdate<br>9.    componentDidUpdate()</p>
-<p><img src="https://img-blog.csdnimg.cn/da523f42a8ce4b56b55e3b69d3793342.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="更新之后"><a href="#更新之后" class="headerlink" title="更新之后"></a>更新之后</h3><p><img src="https://img-blog.csdnimg.cn/64222a0885734834946ebe7b36b264b7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="getSnapshotBeforeUpdate的使用"><a href="#getSnapshotBeforeUpdate的使用" class="headerlink" title="getSnapshotBeforeUpdate的使用"></a>getSnapshotBeforeUpdate的使用</h3><p><img src="https://img-blog.csdnimg.cn/dce8a302ffd14162b9f0a2e43480cec4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/57be75ee62584e689ff775eabad371e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_11,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="即将废弃的勾子"><a href="#即将废弃的勾子" class="headerlink" title="即将废弃的勾子"></a>即将废弃的勾子</h3><p><strong>1.    componentWillMount<br>2.    componentWillReceiveProps<br>3.    componentWillUpdate<br>现在使用会出现警告，下一个大版本需要加上UNSAFE_前缀才能使用，以后可能会被彻底废弃，不建议使用。</strong></p>
-<h1 id="diff算法"><a href="#diff算法" class="headerlink" title="diff算法"></a>diff算法</h1><p>在每次更新render的时候，都是按照标签节点来比较虚拟DOM和真实DOM，如果标签内容发生更改，则会进行重新生成虚拟DOM并替换掉真实DOM，无发生更改则不替换操作，目的是为了增加效率。<br><img src="https://img-blog.csdnimg.cn/6f92a4f79c6e4ab6adf7c391e51c5f4b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/4ed8983564fb4f4dbbda80c1de06f528.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="key标识问题"><a href="#key标识问题" class="headerlink" title="key标识问题"></a>key标识问题</h2><p><strong>虚拟DOM中key的作用：<br>(1). 简单的说: key是虚拟DOM对象的标识, 在更新显示时key起着极其重要的作用。<br>(2). 详细的说: 当状态中的数据发生变化时，react会根据【新数据】生成【新的虚拟DOM】,<br>随后React进行【新虚拟DOM】与【旧虚拟DOM】的diff比较，比较规则如下：<br>a. 旧虚拟DOM中找到了与新虚拟DOM相同的key：<br>(1).若虚拟DOM中内容没变, 直接使用之前的真实DOM<br>(2).若虚拟DOM中内容变了, 则生成新的真实DOM，随后替换掉页面中之前的真实DOM<br>b. 旧虚拟DOM中未找到与新虚拟DOM相同的key,根据数据创建新的真实DOM，随后渲染到到页面</strong></p>
-<h3 id="使用index作为唯一标识-更新人员放最上面"><a href="#使用index作为唯一标识-更新人员放最上面" class="headerlink" title="使用index作为唯一标识(更新人员放最上面)"></a>使用index作为唯一标识(更新人员放最上面)</h3><p>慢动作回放—-使用index索引值作为key</p>
-<pre><code>            初始数据：
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            初始的虚拟DOM：
-                    &lt;li key=0&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=1&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-
-            更新后的数据：
-                    &#123;id:3,name:&#39;小王&#39;,age:20&#125;,
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            更新数据后的虚拟DOM：
-                    &lt;li key=0&gt;小王---20&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=1&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=2&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-</code></pre>
-<p>&#x3D;&#x3D;解析：使用index作为唯一标识key的时候，由于小王在最上面，key&#x3D;0作为标识，而之前的key&#x3D;0是小张，diff算法为最小标签算法，识别li标签内容改变重新替换展示DOM，但是input标签识别内容不变，因此保存在真实DOM，因此造就这种情况,同时由于内容的改变导致效率低&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/54c793ce6b2947649783cffef929c091.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e2e80631fccd459595473dcaf264e3f4.png" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/7ff2b27e71c8409d9399563c621d5c5c.png" alt="在这里插入图片描述"></p>
-<h3 id="使用id作为唯一标识-更新人员放在最上面"><a href="#使用id作为唯一标识-更新人员放在最上面" class="headerlink" title="使用id作为唯一标识(更新人员放在最上面)"></a>使用id作为唯一标识(更新人员放在最上面)</h3><pre><code>慢动作回放----使用id唯一标识作为key
-
-            初始数据：
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            初始的虚拟DOM：
-                    &lt;li key=1&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=2&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-
-            更新后的数据：
-                    &#123;id:3,name:&#39;小王&#39;,age:20&#125;,
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            更新数据后的虚拟DOM：
-                    &lt;li key=3&gt;小王---20&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=1&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=2&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-</code></pre>
-<p>&#x3D;&#x3D;解析：使用id作为key标识，在新数据生成新的虚拟DOM，比较后发现小张和小李的key不变没有替换，input也一样，因此不会发生偏移的情况，同时只有小王一个新的虚拟DOM来添加到真实DOM，不同于上面三个真实DOM都要替换，效率也提高了不少&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/db8c803f404d4466933bb130c35050db.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/a5b9713261d84d60b3a405ebe95e6f86.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/c6455fad957b4e3e831664c51b372130.png" alt="在这里插入图片描述"></p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>用index作为key可能会引发的问题：</p>
-<ol>
-<li>若对数据进行：逆序添加、逆序删除等破坏顺序操作:会产生没有必要的真实DOM更新 &#x3D;&#x3D;&gt; 界面效果没问题, 但效率低。</li>
-<li>如果结构中还包含输入类的DOM：会产生错误DOM更新 &#x3D;&#x3D;&gt; 界面有问题。</li>
-<li>注意！如果不存在对数据的逆序添加、逆序删除等破坏顺序操作，仅用于渲染列表用于展示，使用index作为key是没有问题的。<h4 id="开发中如何选择key"><a href="#开发中如何选择key" class="headerlink" title="开发中如何选择key?:"></a>开发中如何选择key?:</h4></li>
+<ul>
+<li><code>npm i -D webpack webpack-cli webpack-dev-server typescript ts-loader clean-webpack-plugin</code><ul>
+<li>共安装了7个包<ul>
+<li>webpack<ul>
+<li>构建工具webpack</li>
+</ul>
+</li>
+<li>webpack-cli<ul>
+<li>webpack的命令行工具</li>
+</ul>
+</li>
+<li>webpack-dev-server<ul>
+<li>webpack的开发服务器</li>
+</ul>
+</li>
+<li>typescript<ul>
+<li>ts编译器</li>
+</ul>
+</li>
+<li>ts-loader<ul>
+<li>ts加载器，用于在webpack中编译ts文件</li>
+</ul>
+</li>
+<li>html-webpack-plugin<ul>
+<li>webpack中html插件，用来自动创建html文件</li>
+</ul>
+</li>
+<li>clean-webpack-plugin<ul>
+<li>webpack中的清除插件，每次构建都会先清除目录</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li><p>根目录下创建webpack的配置文件webpack.config.js</p>
+<ul>
+<li><p>&#96;&#96;&#96;javascript<br>const path &#x3D; require(“path”);<br>const HtmlWebpackPlugin &#x3D; require(“html-webpack-plugin”);<br>const { CleanWebpackPlugin } &#x3D; require(“clean-webpack-plugin”);</p>
+<p>module.exports &#x3D; {<br>optimization:{<br>    minimize: false &#x2F;&#x2F; 关闭代码压缩，可选<br>},<br><br>entry: “.&#x2F;src&#x2F;index.ts”,<br><br>devtool: “inline-source-map”,<br><br>devServer: {<br>    contentBase: ‘.&#x2F;dist’<br>},<br><br>output: {<br>    path: path.resolve(__dirname, “dist”),<br>    filename: “bundle.js”,<br>    environment: {<br>        arrowFunction: false &#x2F;&#x2F; 关闭webpack的箭头函数，可选<br>    }<br>},<br><br>resolve: {<br>    extensions: [“.ts”, “.js”]<br>},<br><br>module: {<br>    rules: [<br>        {<br>            test: &#x2F;.ts$&#x2F;,<br>            use: {<br>               loader: “ts-loader”<br>            },<br>            exclude: &#x2F;node_modules&#x2F;<br>        }<br>    ]<br>},<br><br>plugins: [<br>    new CleanWebpackPlugin(),<br>    new HtmlWebpackPlugin({<br>        title:’TS测试’<br>    }),<br>]<br>}</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">4. 根目录下创建tsconfig.json，配置可以根据自己需要</span><br><span class="line"></span><br><span class="line"> ```json</span><br><span class="line">     &#123;</span><br><span class="line">         &quot;compilerOptions&quot;: &#123;</span><br><span class="line">             &quot;target&quot;: &quot;ES2015&quot;,</span><br><span class="line">             &quot;module&quot;: &quot;ES2015&quot;,</span><br><span class="line">             &quot;strict&quot;: true</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>修改package.json添加如下配置</p>
+<ul>
+<li>&#96;&#96;&#96;json<br>{<br>  …略…<br>  “scripts”: {<br>“test”: “echo &quot;Error: no test specified&quot; &amp;&amp; exit 1”,<br>“build”: “webpack”,<br>“start”: “webpack serve –open chrome.exe”<br>  },<br>  …略…<br>}</li>
+</ul>
+</li>
 </ol>
-<p>1.最好使用每条数据的唯一标识作为key, 比如id、手机号、身份证号、学号等唯一值。<br>2.如果确定只是简单的展示数据，用index也是可以的。</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> 6. 在src下创建ts文件，并在并命令行执行```npm run build```对代码进行编译，或者执行```npm start```来启动开发服务器</span><br><span class="line">## Babel</span><br><span class="line"></span><br><span class="line">- 经过一系列的配置，使得TS和webpack已经结合到了一起，除了webpack，开发中还经常需要结合babel来对代码进行转换以使其可以兼容到更多的浏览器，在上述步骤的基础上，通过以下步骤再将babel引入到项目中。</span><br><span class="line"></span><br><span class="line">  1. 安装依赖包：</span><br><span class="line">     - ```npm i -D @babel/core @babel/preset-env babel-loader core-js```</span><br><span class="line">     - 共安装了4个包，分别是：</span><br><span class="line">       - @babel/core</span><br><span class="line">         - babel的核心工具</span><br><span class="line">       - @babel/preset-env</span><br><span class="line">         - babel的预定义环境</span><br><span class="line">       - @babel-loader</span><br><span class="line">         - babel在webpack中的加载器</span><br><span class="line">       - core-js</span><br><span class="line">         - core-js用来使老版本的浏览器支持新版ES语法</span><br><span class="line"></span><br><span class="line">  2. 修改webpack.config.js配置文件</span><br><span class="line">     ```javascript</span><br><span class="line">       ...略...</span><br><span class="line">       module: &#123;</span><br><span class="line">           rules: [</span><br><span class="line">               &#123;</span><br><span class="line">                   test: /\.ts$/,</span><br><span class="line">                   use: [</span><br><span class="line">                       &#123;</span><br><span class="line">                           loader: &quot;babel-loader&quot;,</span><br><span class="line">                           options:&#123;</span><br><span class="line">                               presets: [</span><br><span class="line">                                   [</span><br><span class="line">                                       &quot;@babel/preset-env&quot;,</span><br><span class="line">                                       &#123;</span><br><span class="line">                                           &quot;targets&quot;:&#123;</span><br><span class="line">                                               &quot;chrome&quot;: &quot;58&quot;,</span><br><span class="line">                                               &quot;ie&quot;: &quot;11&quot;</span><br><span class="line">                                           &#125;,</span><br><span class="line">                                           &quot;corejs&quot;:&quot;3&quot;,</span><br><span class="line">                                           &quot;useBuiltIns&quot;: &quot;usage&quot;</span><br><span class="line">                                       &#125;</span><br><span class="line">                                   ]</span><br><span class="line">                               ]</span><br><span class="line">                           &#125;</span><br><span class="line">                       &#125;,</span><br><span class="line">                       &#123;</span><br><span class="line">                           loader: &quot;ts-loader&quot;,</span><br><span class="line">       </span><br><span class="line">                       &#125;</span><br><span class="line">                   ],</span><br><span class="line">                   exclude: /node_modules/</span><br><span class="line">               &#125;</span><br><span class="line">           ]</span><br><span class="line">       &#125;</span><br><span class="line">       ...略...</span><br></pre></td></tr></table></figure>
+
+<pre><code> - 如此一来，使用ts编译后的文件将会再次被babel处理，使得代码可以在大部分浏览器中直接使用，可以在配置选项的targets中指定要兼容的浏览器版本。
+</code></pre>
 
       
  <!-- 《添加版权声明 -->
@@ -331,16 +388,16 @@
     
     <br>
     <strong class="create-time">发布时间：</strong>
-    2022-02-13
+    2022-07-30
     <br>
     <strong class="update-time">最后更新：</strong>
-    2022-06-04
+    2022-07-31
     <br>
     <strong class="article-titles">本文标题：</strong>
-    <a href="https://zihong135.github.io/2022/02/13/React学习（二）/" title="React学习(二)" target="_blank">React学习(二)</a>
+    <a href="https://zihong135.github.io/2022/07/30/typescript学习(一)/" title="typescript学习(一)" target="_blank">typescript学习(一)</a>
     <br>
     <strong class="article-url">本文链接：</strong>
-    <a href="https://zihong135.github.io/2022/02/13/React学习（二）/" title="React学习(二)" target="_blank">https://zihong135.github.io/2022/02/13/React学习（二）/</a>
+    <a href="https://zihong135.github.io/2022/07/30/typescript学习(一)/" title="typescript学习(一)" target="_blank">https://zihong135.github.io/2022/07/30/typescript学习(一)/</a>
     <br>
     <strong class="copyright">版权声明：</strong>
     本作品采用
@@ -361,21 +418,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">React</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WEB</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
@@ -386,7 +428,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/前端/React//" class="article-tag-list-link color1">React</a>
+        			<a href="/categories/前端/ts//" class="article-tag-list-link color3">ts</a>
         		</li>
       		
 		</ul>
@@ -441,7 +483,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zihong135.github.io/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zihong135.github.io/2022/07/30/typescript%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -455,18 +497,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/06/04/JavaScript%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JavaScript学习(一)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">React学习(一)</div>
+    <a href="/2022/07/25/uni-app%E7%AE%80%E6%98%93%E5%95%86%E5%9F%8E/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Uni-app简易商城</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -493,7 +526,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6%E5%92%8C%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">受控组件和非受控组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">受控组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.</span> <span class="toc-text">非受控组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A5%E5%85%85%E7%9F%A5%E8%AF%86"><span class="toc-number">1.3.</span> <span class="toc-text">补充知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="toc-number">1.3.1.</span> <span class="toc-text">高阶函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96"><span class="toc-number">1.3.2.</span> <span class="toc-text">函数柯里化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E7%94%A8%E6%9F%AF%E9%87%8C%E5%8C%96%E5%AE%9E%E7%8E%B0%E9%9D%9E%E5%8F%97%E6%8E%A7"><span class="toc-number">1.3.3.</span> <span class="toc-text">不用柯里化实现非受控</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">2.</span> <span class="toc-text">生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%88%E6%97%A7%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">生命周期（旧）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E9%98%B6%E6%AE%B5-%E7%94%B1ReactDOM-render-%E8%A7%A6%E5%8F%91%E2%80%94%E5%88%9D%E6%AC%A1%E6%B8%B2%E6%9F%93"><span class="toc-number">2.1.1.</span> <span class="toc-text">初始化阶段: 由ReactDOM.render()触发—初次渲染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5-%E7%94%B1%E7%BB%84%E4%BB%B6%E5%86%85%E9%83%A8this-setSate%E8%A7%A6%E5%8F%91"><span class="toc-number">2.1.2.</span> <span class="toc-text">更新阶段: 由组件内部this.setSate触发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E5%88%B6%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5"><span class="toc-number">2.1.3.</span> <span class="toc-text">强制更新阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5-%E7%94%B1%E7%88%B6%E7%BB%84%E4%BB%B6render%E8%A7%A6%E5%8F%91"><span class="toc-number">2.1.4.</span> <span class="toc-text">更新阶段: 由父组件render触发</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%88%E6%96%B0%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">生命周期（新）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E9%98%B6%E6%AE%B5-%E7%94%B1ReactDOM-render-%E8%A7%A6%E5%8F%91%E2%80%94%E5%88%9D%E6%AC%A1%E6%B8%B2%E6%9F%93-1"><span class="toc-number">2.2.1.</span> <span class="toc-text">初始化阶段: 由ReactDOM.render()触发—初次渲染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E4%B9%8B%E5%89%8D"><span class="toc-number">2.2.2.</span> <span class="toc-text">更新之前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E4%B9%8B%E5%90%8E"><span class="toc-number">2.2.3.</span> <span class="toc-text">更新之后</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getSnapshotBeforeUpdate%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.2.4.</span> <span class="toc-text">getSnapshotBeforeUpdate的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B3%E5%B0%86%E5%BA%9F%E5%BC%83%E7%9A%84%E5%8B%BE%E5%AD%90"><span class="toc-number">2.2.5.</span> <span class="toc-text">即将废弃的勾子</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#diff%E7%AE%97%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">diff算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#key%E6%A0%87%E8%AF%86%E9%97%AE%E9%A2%98"><span class="toc-number">3.1.</span> <span class="toc-text">key标识问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8index%E4%BD%9C%E4%B8%BA%E5%94%AF%E4%B8%80%E6%A0%87%E8%AF%86-%E6%9B%B4%E6%96%B0%E4%BA%BA%E5%91%98%E6%94%BE%E6%9C%80%E4%B8%8A%E9%9D%A2"><span class="toc-number">3.1.1.</span> <span class="toc-text">使用index作为唯一标识(更新人员放最上面)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8id%E4%BD%9C%E4%B8%BA%E5%94%AF%E4%B8%80%E6%A0%87%E8%AF%86-%E6%9B%B4%E6%96%B0%E4%BA%BA%E5%91%98%E6%94%BE%E5%9C%A8%E6%9C%80%E4%B8%8A%E9%9D%A2"><span class="toc-number">3.1.2.</span> <span class="toc-text">使用id作为唯一标识(更新人员放在最上面)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">3.1.3.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E4%B8%AD%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9key"><span class="toc-number">3.1.3.1.</span> <span class="toc-text">开发中如何选择key?:</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">TypeScript是什么？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">2.</span> <span class="toc-text">TypeScript 开发环境搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">TypeScript基本类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%80%E6%9C%89%E7%B1%BB%E5%9E%8B%E5%B1%95%E7%A4%BA"><span class="toc-number">3.1.</span> <span class="toc-text">所有类型展示</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9"><span class="toc-number">4.</span> <span class="toc-text">编译选项</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#webpack"><span class="toc-number">5.</span> <span class="toc-text">webpack</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -526,7 +559,7 @@ if(true){
     repo: 'zihong135.github.io',
     owner: 'zihong135',
     admin: ['zihong135'],
-    id: 'Sun Feb 13 2022 10:46:27 GMT+0800',
+    id: 'Sat Jul 30 2022 00:00:00 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
