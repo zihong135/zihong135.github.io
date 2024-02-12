@@ -6,61 +6,78 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zihong135.github.io">
-  <title>React学习(二) | 未入流的小邹博客</title>
+  <title>React学习(一) | 未入流的小邹博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本人学习视频为B站尚硅谷，视频连接为：尚硅谷React">
+  <meta name="description" content="本人学习视频为B站尚硅谷，视频连接为：尚硅谷React React是什么？官方定义：用于构建用户界面的 JavaScript 库(只关注于View)尚硅谷总结：是一个将数据渲染为HTML视图的开源JavaScript 库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React学习(二)">
-<meta property="og:url" content="https://zihong135.github.io/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+<meta property="og:title" content="React学习(一)">
+<meta property="og:url" content="https://zihong135.github.io/2024/02/12/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="未入流的小邹博客">
-<meta property="og:description" content="本人学习视频为B站尚硅谷，视频连接为：尚硅谷React">
+<meta property="og:description" content="本人学习视频为B站尚硅谷，视频连接为：尚硅谷React React是什么？官方定义：用于构建用户界面的 JavaScript 库(只关注于View)尚硅谷总结：是一个将数据渲染为HTML视图的开源JavaScript 库">
 <meta property="og:locale">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/4ae8b000063047e4bff532d0c942de82.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/5868d3fe03764ef983cbe0b1b77b27cf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/f63149383e2242b58ccfdfd3e54c206c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/9fbd2f16a28048dab82602af22ee1e48.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/1e54938c4eeb4927a9331fecd9fd298a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/a44adf7ca1d0470592d5ece3bbde39d4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/03e421be132248d7b5c6dc0781553ac1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c394a1ada36e42f295463c2eccb4be84.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/3217fe9cc68e4986b59935328b9a8f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/8568de2f1ceb4bcdae2f0a38659561d7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c32877eeff964682990019644fd1ec9b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_12,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c94d306a2c7b46fc803db7d8064de6dd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/f4e746e454104d40ad4a151b11c98ece.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/4413ffc322d24b75a2413f9d4ebec22a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e954239c964b4657a2b69879ce12f137.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/cf845f3791c1442186558d06a1126cb2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/8a0c26b8321b463390ac605106e4c069.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e2acf740e43c46c7bb16fd8ceec2a904.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/557639f025aa41cc8c6eeb10951b58a6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/46d37798bdc2432b9871e166e87f2986.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/0d2757dbdbd04a27824c2948cd53e833.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/df0056f9d3784503bd802274aab42f89.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_13,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/193b204fd0324eb39a2fb1c17409573a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/5b2d13206ff446afa8175b11a299bc1d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/d3635a4c713b45249ae50d433172ec76.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/da523f42a8ce4b56b55e3b69d3793342.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/64222a0885734834946ebe7b36b264b7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/dce8a302ffd14162b9f0a2e43480cec4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/57be75ee62584e689ff775eabad371e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_11,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/6f92a4f79c6e4ab6adf7c391e51c5f4b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/4ed8983564fb4f4dbbda80c1de06f528.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/54c793ce6b2947649783cffef929c091.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/e2e80631fccd459595473dcaf264e3f4.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/7ff2b27e71c8409d9399563c621d5c5c.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/db8c803f404d4466933bb130c35050db.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/a5b9713261d84d60b3a405ebe95e6f86.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/c6455fad957b4e3e831664c51b372130.png">
-<meta property="article:published_time" content="2022-02-13T02:46:27.685Z">
-<meta property="article:modified_time" content="2022-06-04T13:35:26.524Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/25ed290a00ba4dd3a3cdb2676a4a883d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/580b333264a44952928d9f6b38188de7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/93b103ebf7f3475da66f0892ad50073b.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4ac5ce3b50de46f8b67783f0f797443e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c94151355dbb4deaa389dd95420e60f3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1409c7cabac14805b19ce22ecf997052.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/17b8e01d4c3245faa8c60104800fa76c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b0e34c0151e046ae8cacb16ed6db26c3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d2c3a72812ad466babaaf83f8735de28.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_10,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7d3f2049a94a41a591341038047d0c5e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/5cd49b5da14e4dc782352988bba4d0ac.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/9cd6c91d08fd447f9e796a3f567ba7c9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_12,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c11998da608d45af8379b767fe4925ea.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/66a0bf5e87f945958482d4bbb35099e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_14,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7c4af7a41e7a49c6aabdacc937e1c200.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1048b6659e8c44be89ab7e7dda078668.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b05782ad959744e88fba119db06eedb4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c53c082da55b4464a33dee96b39716fb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/145fdc49451c4188a1c3ea823edd0dd8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b62f980730964d31ac17350ef6135c87.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c1901cdd16f74b2895289cdae97f46cb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a15e01f5103d4022984de35a76363a66.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/462318fc4d424717822911fb7b2b3c02.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/043e65a50ebd40d1b853bb7550c8d325.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/464a465619fa4992a1268c590fb98003.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/9a40eec469a6479c8faf2d6dc1a36492.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/5d310faa1ebb45bd949e4d471cb1e59e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/dbe9f77b5a8e4be08a5506ba6eb4750f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/37828aedd73d4e9685da775148004bd9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6bb2e65485c54d6e8031292fe7d889cb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/f72f050a2bfe408aaf3e68065527d6c7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a9e348cbb26742aca8f54e8781f794a0.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/26cd686c20ff4666833a818e25c4bb3a.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/0659fc3e9c534f94b2f1fafd9d1a1758.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ecfe55e6653543b39f9643d913073825.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3dc8b330478c41cfa79eaaba098b447d.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/23827e71211642c48d0a20e2b4ac98e2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/82354d5bc9ac4ab29f6aaf934a9b088f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_14,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3b4adf024f644437aa9795b222869492.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2e85fddccd974d7eaf6dfc840972d707.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c160bb19b7b94ed2a20c07e2c8d272df.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/f16a4ce4f47146cc85f7c33c253d5996.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/592665f4dc124dce943cd5c2b9a8db29.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7cc1249ca8544bfc87b65a37e7bc697d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_15,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/722deb17cf3a449b8d7b6f09724fcf83.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b963a12699864cb6896afbd8983f3f46.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/fb316d4d4f524266aa2b13d4fe795314.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/940c5bc0943044f28875c5046c56dc1b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ee624aa6d2fd4c63b39c749159547167.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1136aea56af14333b8fa4c3ff390101c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d995d19563d0432196c62dc1d4d868cd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a9983a336460498e8fcb0ebff6519b87.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4ce33df96b73408cbd73aaa01272e997.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ab9d60460bed42458e94f06b5ac9cdfe.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/75c5a31c3c464e619d1a6609bd943573.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ac727f804c2349faa08089648f7d10ca.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c3b7fd9dc6ac46ada9170adc2d5eda9a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/797115608ade49ecb47bb1541d712ca0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="article:published_time" content="2024-02-12T13:56:54.180Z">
+<meta property="article:modified_time" content="2022-06-04T13:35:56.000Z">
 <meta property="article:author" content="未入流的小邹">
-<meta property="article:tag" content="React">
-<meta property="article:tag" content="WEB">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/4ae8b000063047e4bff532d0c942de82.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/25ed290a00ba4dd3a3cdb2676a4a883d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16">
   
     <link rel="alternative" href="/atom.xml" title="未入流的小邹博客" type="application/atom+xml">
   
@@ -195,14 +212,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-React学习（二）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-React学习（一）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      React学习(二)
+      React学习(一)
     </h1>
   
 
@@ -217,8 +234,8 @@
   </a>
 
         
-        <a href="/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2022-02-13T02:46:27.685Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-13</time>
+        <a href="/2024/02/12/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2024-02-12T13:56:54.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-02-12</time>
 </a>
         
       </header>
@@ -226,94 +243,47 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>本人学习视频为B站尚硅谷，视频连接为：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wy4y1D7JT?p=1">尚硅谷React</a></p>
+<h1 id="React是什么？"><a href="#React是什么？" class="headerlink" title="React是什么？"></a>React是什么？</h1><p><strong>官方定义：用于构建用户界面的 JavaScript 库(只关注于View)<br>尚硅谷总结：是一个将数据渲染为HTML视图的开源JavaScript 库</strong></p>
 <span id="more"></span>
-<h1 id="受控组件和非受控组件"><a href="#受控组件和非受控组件" class="headerlink" title="受控组件和非受控组件"></a>受控组件和非受控组件</h1><h2 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h2><p>一般是现用现取，即需要用的时候通过ref进行传递<br><img src="https://img-blog.csdnimg.cn/4ae8b000063047e4bff532d0c942de82.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/5868d3fe03764ef983cbe0b1b77b27cf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="非受控组件"><a href="#非受控组件" class="headerlink" title="非受控组件"></a>非受控组件</h2><p>即输入时就可以查看输入内容并通过state状态保存<br><img src="https://img-blog.csdnimg.cn/f63149383e2242b58ccfdfd3e54c206c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/9fbd2f16a28048dab82602af22ee1e48.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h2><h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><p><strong>高阶函数：如果一个函数符合下面2个规范中的任何一个，那该函数就是高阶函数。<br>1.若A函数，接收的参数是一个函数，那么A就可以称之为高阶函数。<br>2.若A函数，调用的返回值依然是一个函数，那么A就可以称之为高阶函数。<br>常见的高阶函数有：Promise、setTimeout、arr.map()等等</strong></p>
-<h3 id="函数柯里化"><a href="#函数柯里化" class="headerlink" title="函数柯里化"></a>函数柯里化</h3><p><strong>函数的柯里化：通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式。</strong><br>    <strong>function sum(a){<br>                            return(b)&#x3D;&gt;{<br>                                return (c)&#x3D;&gt;{<br>                                    return a+b+c<br>                                }<br>                            }<br>                        }</strong><br>&#x3D;&#x3D;[dataType]是变量，而少去[]则是相当于’dataType’是字符串形式传入&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/1e54938c4eeb4927a9331fecd9fd298a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="不用柯里化实现非受控"><a href="#不用柯里化实现非受控" class="headerlink" title="不用柯里化实现非受控"></a>不用柯里化实现非受控</h3><p><img src="https://img-blog.csdnimg.cn/a44adf7ca1d0470592d5ece3bbde39d4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/d628725cfb1d4ea2be8ff06583985cbf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h1 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h1><ol>
-<li>组件从创建到死亡它会经历一些特定的阶段。</li>
-<li>React组件中包含一系列勾子函数(生命周期回调函数), 会在特定的时刻调用。</li>
-<li>我们在定义组件时，会在特定的生命周期回调函数中，做特定的工作。<br><img src="https://img-blog.csdnimg.cn/03e421be132248d7b5c6dc0781553ac1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/c394a1ada36e42f295463c2eccb4be84.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/3217fe9cc68e4986b59935328b9a8f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>&#x3D;&#x3D;点击按钮卸载组件&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/8568de2f1ceb4bcdae2f0a38659561d7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><h2 id="生命周期（旧）"><a href="#生命周期（旧）" class="headerlink" title="生命周期（旧）"></a>生命周期（旧）</h2><img src="https://img-blog.csdnimg.cn/c32877eeff964682990019644fd1ec9b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_12,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><h3 id="初始化阶段-由ReactDOM-render-触发—初次渲染"><a href="#初始化阶段-由ReactDOM-render-触发—初次渲染" class="headerlink" title="初始化阶段: 由ReactDOM.render()触发—初次渲染"></a>初始化阶段: 由ReactDOM.render()触发—初次渲染</h3></li>
-<li>constructor()</li>
-<li>componentWillMount()</li>
-<li>render()</li>
-<li>componentDidMount()<br><img src="https://img-blog.csdnimg.cn/c94d306a2c7b46fc803db7d8064de6dd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/f4e746e454104d40ad4a151b11c98ece.png" alt="在这里插入图片描述"></li>
-</ol>
-<p><img src="https://img-blog.csdnimg.cn/4413ffc322d24b75a2413f9d4ebec22a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="更新阶段-由组件内部this-setSate触发"><a href="#更新阶段-由组件内部this-setSate触发" class="headerlink" title="更新阶段: 由组件内部this.setSate触发"></a>更新阶段: 由组件内部this.setSate触发</h3><ol>
-<li>shouldComponentUpdate()</li>
-<li>componentWillUpdate()</li>
-<li>render() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 必须使用的一个</li>
-<li>componentDidUpdate()<br><img src="https://img-blog.csdnimg.cn/e954239c964b4657a2b69879ce12f137.png" alt="在这里插入图片描述"><br>&#x3D;&#x3D;如果阀门函数返回的是false则无法进行更新&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/cf845f3791c1442186558d06a1126cb2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><h3 id="强制更新阶段"><a href="#强制更新阶段" class="headerlink" title="强制更新阶段"></a>强制更新阶段</h3></li>
-<li>componentWillUpdate()</li>
-<li>render() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 必须使用的一个</li>
-<li>componentDidUpdate()<br><img src="https://img-blog.csdnimg.cn/8a0c26b8321b463390ac605106e4c069.png" alt="在这里插入图片描述"><h3 id="更新阶段-由父组件render触发"><a href="#更新阶段-由父组件render触发" class="headerlink" title="更新阶段: 由父组件render触发"></a>更新阶段: 由父组件render触发</h3></li>
-</ol>
-<p>1.componentWillReceiveProps<br>2.    shouldComponentUpdate()<br>3.    componentWillUpdate()<br>4.    render() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 必须使用的一个<br>5.    componentDidUpdate()<br>&#x3D;&#x3D;<strong>componentWillReceiveProps这个是接收到新的参数才调用，第一次初始化render是不会调用</strong>&#x3D;&#x3D;</p>
-<p><img src="https://img-blog.csdnimg.cn/e2acf740e43c46c7bb16fd8ceec2a904.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/557639f025aa41cc8c6eeb10951b58a6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/46d37798bdc2432b9871e166e87f2986.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/0d2757dbdbd04a27824c2948cd53e833.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="生命周期（新）"><a href="#生命周期（新）" class="headerlink" title="生命周期（新）"></a>生命周期（新）</h2><p>&#x3D;&#x3D;新生命周期在React17版本以上适用，删除了原来的componentWillMount()，componentWillUpdate()，componentWillReceiveProps（）阶段，新增了getDerivedStateFromProps（）和getSnapshotBeforeUpdate（）阶段，并如下图所示：<br><img src="https://img-blog.csdnimg.cn/df0056f9d3784503bd802274aab42f89.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_13,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="初始化阶段-由ReactDOM-render-触发—初次渲染-1"><a href="#初始化阶段-由ReactDOM-render-触发—初次渲染-1" class="headerlink" title="初始化阶段: 由ReactDOM.render()触发—初次渲染"></a>初始化阶段: 由ReactDOM.render()触发—初次渲染</h3><p><strong>1.    constructor()<br>2.    getDerivedStateFromProps<br>3.    render()<br>4.    componentDidMount() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 常用<br>一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息</strong><br><img src="https://img-blog.csdnimg.cn/193b204fd0324eb39a2fb1c17409573a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/5b2d13206ff446afa8175b11a299bc1d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/d3635a4c713b45249ae50d433172ec76.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="更新之前"><a href="#更新之前" class="headerlink" title="更新之前"></a>更新之前</h3><p><strong>初始化阶段: 由ReactDOM.render()触发—初次渲染</strong></p>
-<ol>
-<li>constructor()</li>
-<li>getDerivedStateFromProps </li>
-<li>render()</li>
-<li>componentDidMount() &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt; 常用一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息</li>
-</ol>
-<p><strong>更新阶段: 由组件内部this.setSate()或父组件重新render触发</strong><br>5.    getDerivedStateFromProps<br>6.    shouldComponentUpdate()<br>7.    render()<br>8.    getSnapshotBeforeUpdate<br>9.    componentDidUpdate()</p>
-<p><img src="https://img-blog.csdnimg.cn/da523f42a8ce4b56b55e3b69d3793342.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="更新之后"><a href="#更新之后" class="headerlink" title="更新之后"></a>更新之后</h3><p><img src="https://img-blog.csdnimg.cn/64222a0885734834946ebe7b36b264b7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="getSnapshotBeforeUpdate的使用"><a href="#getSnapshotBeforeUpdate的使用" class="headerlink" title="getSnapshotBeforeUpdate的使用"></a>getSnapshotBeforeUpdate的使用</h3><p><img src="https://img-blog.csdnimg.cn/dce8a302ffd14162b9f0a2e43480cec4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/57be75ee62584e689ff775eabad371e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_11,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h3 id="即将废弃的勾子"><a href="#即将废弃的勾子" class="headerlink" title="即将废弃的勾子"></a>即将废弃的勾子</h3><p><strong>1.    componentWillMount<br>2.    componentWillReceiveProps<br>3.    componentWillUpdate<br>现在使用会出现警告，下一个大版本需要加上UNSAFE_前缀才能使用，以后可能会被彻底废弃，不建议使用。</strong></p>
-<h1 id="diff算法"><a href="#diff算法" class="headerlink" title="diff算法"></a>diff算法</h1><p>在每次更新render的时候，都是按照标签节点来比较虚拟DOM和真实DOM，如果标签内容发生更改，则会进行重新生成虚拟DOM并替换掉真实DOM，无发生更改则不替换操作，目的是为了增加效率。<br><img src="https://img-blog.csdnimg.cn/6f92a4f79c6e4ab6adf7c391e51c5f4b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/4ed8983564fb4f4dbbda80c1de06f528.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="key标识问题"><a href="#key标识问题" class="headerlink" title="key标识问题"></a>key标识问题</h2><p><strong>虚拟DOM中key的作用：<br>(1). 简单的说: key是虚拟DOM对象的标识, 在更新显示时key起着极其重要的作用。<br>(2). 详细的说: 当状态中的数据发生变化时，react会根据【新数据】生成【新的虚拟DOM】,<br>随后React进行【新虚拟DOM】与【旧虚拟DOM】的diff比较，比较规则如下：<br>a. 旧虚拟DOM中找到了与新虚拟DOM相同的key：<br>(1).若虚拟DOM中内容没变, 直接使用之前的真实DOM<br>(2).若虚拟DOM中内容变了, 则生成新的真实DOM，随后替换掉页面中之前的真实DOM<br>b. 旧虚拟DOM中未找到与新虚拟DOM相同的key,根据数据创建新的真实DOM，随后渲染到到页面</strong></p>
-<h3 id="使用index作为唯一标识-更新人员放最上面"><a href="#使用index作为唯一标识-更新人员放最上面" class="headerlink" title="使用index作为唯一标识(更新人员放最上面)"></a>使用index作为唯一标识(更新人员放最上面)</h3><p>慢动作回放—-使用index索引值作为key</p>
-<pre><code>            初始数据：
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            初始的虚拟DOM：
-                    &lt;li key=0&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=1&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-
-            更新后的数据：
-                    &#123;id:3,name:&#39;小王&#39;,age:20&#125;,
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            更新数据后的虚拟DOM：
-                    &lt;li key=0&gt;小王---20&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=1&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=2&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-</code></pre>
-<p>&#x3D;&#x3D;解析：使用index作为唯一标识key的时候，由于小王在最上面，key&#x3D;0作为标识，而之前的key&#x3D;0是小张，diff算法为最小标签算法，识别li标签内容改变重新替换展示DOM，但是input标签识别内容不变，因此保存在真实DOM，因此造就这种情况,同时由于内容的改变导致效率低&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/54c793ce6b2947649783cffef929c091.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/e2e80631fccd459595473dcaf264e3f4.png" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/7ff2b27e71c8409d9399563c621d5c5c.png" alt="在这里插入图片描述"></p>
-<h3 id="使用id作为唯一标识-更新人员放在最上面"><a href="#使用id作为唯一标识-更新人员放在最上面" class="headerlink" title="使用id作为唯一标识(更新人员放在最上面)"></a>使用id作为唯一标识(更新人员放在最上面)</h3><pre><code>慢动作回放----使用id唯一标识作为key
-
-            初始数据：
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            初始的虚拟DOM：
-                    &lt;li key=1&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=2&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-
-            更新后的数据：
-                    &#123;id:3,name:&#39;小王&#39;,age:20&#125;,
-                    &#123;id:1,name:&#39;小张&#39;,age:18&#125;,
-                    &#123;id:2,name:&#39;小李&#39;,age:19&#125;,
-            更新数据后的虚拟DOM：
-                    &lt;li key=3&gt;小王---20&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=1&gt;小张---18&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-                    &lt;li key=2&gt;小李---19&lt;input type=&quot;text&quot;/&gt;&lt;/li&gt;
-</code></pre>
-<p>&#x3D;&#x3D;解析：使用id作为key标识，在新数据生成新的虚拟DOM，比较后发现小张和小李的key不变没有替换，input也一样，因此不会发生偏移的情况，同时只有小王一个新的虚拟DOM来添加到真实DOM，不同于上面三个真实DOM都要替换，效率也提高了不少&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/db8c803f404d4466933bb130c35050db.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/a5b9713261d84d60b3a405ebe95e6f86.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/c6455fad957b4e3e831664c51b372130.png" alt="在这里插入图片描述"></p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>用index作为key可能会引发的问题：</p>
-<ol>
-<li>若对数据进行：逆序添加、逆序删除等破坏顺序操作:会产生没有必要的真实DOM更新 &#x3D;&#x3D;&gt; 界面效果没问题, 但效率低。</li>
-<li>如果结构中还包含输入类的DOM：会产生错误DOM更新 &#x3D;&#x3D;&gt; 界面有问题。</li>
-<li>注意！如果不存在对数据的逆序添加、逆序删除等破坏顺序操作，仅用于渲染列表用于展示，使用index作为key是没有问题的。<h4 id="开发中如何选择key"><a href="#开发中如何选择key" class="headerlink" title="开发中如何选择key?:"></a>开发中如何选择key?:</h4></li>
-</ol>
-<p>1.最好使用每条数据的唯一标识作为key, 比如id、手机号、身份证号、学号等唯一值。<br>2.如果确定只是简单的展示数据，用index也是可以的。</p>
+<h1 id="JS的缺点"><a href="#JS的缺点" class="headerlink" title="JS的缺点"></a>JS的缺点</h1><p>1.原生js操作DOM繁琐，效率低（DOM-API操作UI）<br>2.使用js直接操作DOM，浏览器会进行打量的重绘重排<br>3.原生js没有组件化编码方案，代码复用效率低</p>
+<h1 id="React特点"><a href="#React特点" class="headerlink" title="React特点"></a>React特点</h1><p>1.采用组件化模式，声明式编码，提高开发效率及组件复用效率<br>2.在React Native可以使用React语法进行移动端开发<br>3.使用虚拟DOM+优秀的Diffing算法，尽量减少与真实DOM交互<br><strong>在原生JS当中进行数据的更新时，会直接将原来的数据重新赋值，不管是否重复</strong><br><img src="https://img-blog.csdnimg.cn/25ed290a00ba4dd3a3cdb2676a4a883d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>在React中，在对数据进行更新时，虚拟DOM会对数据进行匹配，如有重复数据则不会重新在渲染，只会挑选之前没有渲染的数据进行页面更新</strong></p>
+<h1 id="第一个React"><a href="#第一个React" class="headerlink" title="第一个React"></a>第一个React</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>1.先引入React依赖包，依赖包分为旧版本和新版本，旧版本可能有些公司仍然在使用，本人旧版本学习为16.8版本<br><img src="https://img-blog.csdnimg.cn/580b333264a44952928d9f6b38188de7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/93b103ebf7f3475da66f0892ad50073b.png" alt="在这里插入图片描述"><br>2.创建html文件<br><img src="https://img-blog.csdnimg.cn/4ac5ce3b50de46f8b67783f0f797443e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/c94151355dbb4deaa389dd95420e60f3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="虚拟DOM的两种创建方式"><a href="#虚拟DOM的两种创建方式" class="headerlink" title="虚拟DOM的两种创建方式"></a>虚拟DOM的两种创建方式</h2><h3 id="使用jsx创建虚拟DOM"><a href="#使用jsx创建虚拟DOM" class="headerlink" title="使用jsx创建虚拟DOM"></a>使用jsx创建虚拟DOM</h3><p><img src="https://img-blog.csdnimg.cn/1409c7cabac14805b19ce22ecf997052.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>在使用js语法创建虚拟DOM时，如果是多重标签只能使用React全局对象不断去创建节点，比较麻烦，实际上JSX是JS的语法糖（简写方法）</strong><br><img src="https://img-blog.csdnimg.cn/17b8e01d4c3245faa8c60104800fa76c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="真实DOM与虚拟DOM"><a href="#真实DOM与虚拟DOM" class="headerlink" title="真实DOM与虚拟DOM"></a>真实DOM与虚拟DOM</h2><p><strong>1.    React提供了一些API来创建一种 “特别” 的一般js对象<br>    const VDOM &#x3D; React.createElement(‘xx’,{id:’xx’},’xx’)<br>    上面创建的就是一个简单的虚拟DOM对象<br>2.    虚拟DOM对象最终都会被React转换为真实的DOM<br>3.    我们编码时基本只需要操作react的虚拟DOM相关数据, react会转换为真实DOM变化而更新界。</strong><br><img src="https://img-blog.csdnimg.cn/b0e34c0151e046ae8cacb16ed6db26c3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="真实DOM属性"><a href="#真实DOM属性" class="headerlink" title="真实DOM属性"></a>真实DOM属性</h3><p><img src="https://img-blog.csdnimg.cn/d2c3a72812ad466babaaf83f8735de28.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_10,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="虚拟DOM属性"><a href="#虚拟DOM属性" class="headerlink" title="虚拟DOM属性"></a>虚拟DOM属性</h3><p><img src="https://img-blog.csdnimg.cn/7d3f2049a94a41a591341038047d0c5e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h1 id="JSX语法（-JavaScript-XML）"><a href="#JSX语法（-JavaScript-XML）" class="headerlink" title="JSX语法（ JavaScript XML）"></a>JSX语法（ JavaScript XML）</h1><p><strong>1.定义虚拟DOM时，不要写引号。<br>2.标签中混入JS表达式时要用{}。<br>3.样式的类名指定不要用class，要用className。<br>4.内联样式，要用style&#x3D;{{key:value}}的形式去写。<br>5.只有一个根标签<br>6.标签必须闭<br>7.标签首字母<br>(1).若小写字母开头，则将该标签转为html中同名元素，若html中无该标签对应的同名元素，则报错。<br>(2).若大写字母开头，react就去渲染对应的组件，若组件没有定义，则报错。</strong><br><img src="https://img-blog.csdnimg.cn/5cd49b5da14e4dc782352988bba4d0ac.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/9cd6c91d08fd447f9e796a3f567ba7c9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_12,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="JS代码与表达式区别"><a href="#JS代码与表达式区别" class="headerlink" title="JS代码与表达式区别"></a>JS代码与表达式区别</h2><p><strong>1.表达式：一个表达式会产生一个值，可以放在任何一个需要值的地方<br>下面这些都是表达式：<br>(1). a<br>(2). a+b<br>(3). demo(1)<br>(4). arr.map()<br>(5). function test () {}<br>2.语句(代码)：<br>下面这些都是语句(代码)：<br>(1).if(){}<br>(2).for(){}<br>(3).switch(){case:xxxx}</strong><br><img src="https://img-blog.csdnimg.cn/c11998da608d45af8379b767fe4925ea.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/66a0bf5e87f945958482d4bbb35099e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_14,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h1 id="模块与组件、模块化与组件化的理解"><a href="#模块与组件、模块化与组件化的理解" class="headerlink" title="模块与组件、模块化与组件化的理解"></a>模块与组件、模块化与组件化的理解</h1><h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>向外提供特定功能的js程序, 一般就是一个js文件<br>作用：复用js, 简化js的编写, 提高js运行效率</p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>用来实现局部功能效果的代码和资源的集合(html&#x2F;css&#x2F;js&#x2F;image等等)<br>作用：复用编码, 简化项目编码, 提高运行效率</p>
+<h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><p>当应用的js都以模块来编写的, 这个应用就是一个模块化的应用</p>
+<h2 id="组件化"><a href="#组件化" class="headerlink" title="组件化"></a>组件化</h2><p>当应用是以多组件的方式实现, 这个应用就是一个组件化的应用</p>
+<h2 id="使用React开发者工具调试"><a href="#使用React开发者工具调试" class="headerlink" title="使用React开发者工具调试"></a>使用React开发者工具调试</h2><p><img src="https://img-blog.csdnimg.cn/7c4af7a41e7a49c6aabdacc937e1c200.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/1048b6659e8c44be89ab7e7dda078668.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>正常项目网页</strong><br><img src="https://img-blog.csdnimg.cn/b05782ad959744e88fba119db06eedb4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="函数式组件"><a href="#函数式组件" class="headerlink" title="函数式组件"></a>函数式组件</h2><p><strong>1.    组件名必须首字母大写<br>2.    虚拟DOM元素只能有一个根元素<br>3.    虚拟DOM元素必须有结束标签</strong><br><strong>执行了ReactDOM.render(<MyComponent/>…….之后，发生了什么？<br>                    1.React解析组件标签，找到了MyComponent组件。<br>                    2.发现组件是使用函数定义的，随后调用该函数，将返回的虚拟DOM转为真实DOM，随后呈现在页面中。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/c53c082da55b4464a33dee96b39716fb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/145fdc49451c4188a1c3ea823edd0dd8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/b62f980730964d31ac17350ef6135c87.png" alt="在这里插入图片描述"></p>
+<h2 id="类式组件"><a href="#类式组件" class="headerlink" title="类式组件"></a>类式组件</h2><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p><strong>1.类中的构造器不是必须要写的，要对实例进行一些初始化的操作，如添加指定属性时才写。<br>2.如果A类继承了B类，且A类中写了构造器，那么A类构造器中的super是必须要调用的。<br>3.类中所定义的方法，都放在了类的原型对象上，供实例去使用。</strong><br><img src="https://img-blog.csdnimg.cn/c1901cdd16f74b2895289cdae97f46cb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="组件-1"><a href="#组件-1" class="headerlink" title="组件"></a>组件</h3><p><strong>执行了ReactDOM.render(<MyComponent/>…….之后，发生了什么？<br>                    1.React解析组件标签，找到了MyComponent组件。<br>                    2.发现组件是使用类定义的，随后new出来该类的实例，并通过该实例调用到原型上的render方法。<br>                    3.将render返回的虚拟DOM转为真实DOM，随后呈现在页面中。</strong><br><img src="https://img-blog.csdnimg.cn/a15e01f5103d4022984de35a76363a66.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/462318fc4d424717822911fb7b2b3c02.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="state状态"><a href="#state状态" class="headerlink" title="state状态"></a>state状态</h3><p><strong>1.    state是组件对象最重要的属性, 值是对象(可以包含多个key-value的组合)<br>2.    组件被称为”状态机”, 通过更新组件的state来更新对应的页面显示(重新渲染组件)</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/043e65a50ebd40d1b853bb7550c8d325.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>&#x3D;&#x3D;<strong>填写onclick时的错误</strong>&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/464a465619fa4992a1268c590fb98003.png" alt="在这里插入图片描述"><br>&#x3D;&#x3D;<strong>填demo（）的错误</strong>&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/9a40eec469a6479c8faf2d6dc1a36492.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/5d310faa1ebb45bd949e4d471cb1e59e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="点击事件"><a href="#点击事件" class="headerlink" title="点击事件"></a>点击事件</h3><p><strong>普通JS类中点击事件</strong><br><img src="https://img-blog.csdnimg.cn/dbe9f77b5a8e4be08a5506ba6eb4750f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/37828aedd73d4e9685da775148004bd9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p><img src="https://img-blog.csdnimg.cn/6bb2e65485c54d6e8031292fe7d889cb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>简写</strong><br><img src="https://img-blog.csdnimg.cn/f72f050a2bfe408aaf3e68065527d6c7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/a9e348cbb26742aca8f54e8781f794a0.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/26cd686c20ff4666833a818e25c4bb3a.png" alt="在这里插入图片描述"></p>
+<h2 id="props属性"><a href="#props属性" class="headerlink" title="props属性"></a>props属性</h2><p><strong>1.    每个组件对象都会有props(properties的简写)属性<br>2.    组件标签的所有属性都保存在props中<br>3.    通过标签属性从组件外向组件内传递变化的数据<br>4.    注意: 组件内部不要修改props数据 里面的数据是只读的</strong><br><img src="https://img-blog.csdnimg.cn/0659fc3e9c534f94b2f1fafd9d1a1758.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/ecfe55e6653543b39f9643d913073825.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/3dc8b330478c41cfa79eaaba098b447d.png" alt="在这里插入图片描述"></p>
+<h3 id="展开运算符"><a href="#展开运算符" class="headerlink" title="展开运算符"></a>展开运算符</h3><p><img src="https://img-blog.csdnimg.cn/23827e71211642c48d0a20e2b4ac98e2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/82354d5bc9ac4ab29f6aaf934a9b088f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_14,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="对类型进行限制"><a href="#对类型进行限制" class="headerlink" title="对类型进行限制"></a>对类型进行限制</h3><p>&#x3D;&#x3D;版本为16.8&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/3b4adf024f644437aa9795b222869492.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>&#x3D;&#x3D;将age：18改为age：’18’时显示的错误&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/2e85fddccd974d7eaf6dfc840972d707.png" alt="在这里插入图片描述"></p>
+<h3 id="简写方式"><a href="#简写方式" class="headerlink" title="简写方式"></a>简写方式</h3><p><img src="https://img-blog.csdnimg.cn/c160bb19b7b94ed2a20c07e2c8d272df.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<p>&#x3D;&#x3D;<strong>缺少static</strong>&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/f16a4ce4f47146cc85f7c33c253d5996.png" alt="在这里插入图片描述"></p>
+<h3 id="补充类知识"><a href="#补充类知识" class="headerlink" title="补充类知识"></a>补充类知识</h3><p><img src="https://img-blog.csdnimg.cn/592665f4dc124dce943cd5c2b9a8db29.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/7cc1249ca8544bfc87b65a37e7bc697d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_15,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="构造器中的props"><a href="#构造器中的props" class="headerlink" title="构造器中的props"></a>构造器中的props</h3><p><img src="https://img-blog.csdnimg.cn/722deb17cf3a449b8d7b6f09724fcf83.png" alt="在这里插入图片描述"></p>
+<h3 id="函数式组件传入props"><a href="#函数式组件传入props" class="headerlink" title="函数式组件传入props"></a>函数式组件传入props</h3><p><img src="https://img-blog.csdnimg.cn/b963a12699864cb6896afbd8983f3f46.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/fb316d4d4f524266aa2b13d4fe795314.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="refs属性"><a href="#refs属性" class="headerlink" title="refs属性"></a>refs属性</h2><p><strong>组件内的标签可以定义ref属性来标识自己</strong><br><strong>1.    通过onXxx属性指定事件处理函数(注意大小写)<br>(1)    React使用的是自定义(合成)事件, 而不是使用的原生DOM事件—————— 为了更好的兼容性<br>(2)    React中的事件是通过事件委托方式处理的(委托给组件最外层的元素)————————为了的高效<br>2.    通过event.target得到发生事件的DOM元素对象 ——————————不要过度使用ref</strong></p>
+<h3 id="refs字符串形式用法（可能未来废弃"><a href="#refs字符串形式用法（可能未来废弃" class="headerlink" title="refs字符串形式用法（可能未来废弃)"></a>refs字符串形式用法（可能未来废弃)</h3><p><img src="https://img-blog.csdnimg.cn/940c5bc0943044f28875c5046c56dc1b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/ee624aa6d2fd4c63b39c749159547167.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="回调函数形式"><a href="#回调函数形式" class="headerlink" title="回调函数形式"></a>回调函数形式</h3><p><img src="https://img-blog.csdnimg.cn/1136aea56af14333b8fa4c3ff390101c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/d995d19563d0432196c62dc1d4d868cd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>&#x3D;&#x3D;注意：这种内联函数形式中一旦render函数进行更新时，就会调用两次回调函数，第一次为null，第二次才是节点。需要用class类绑定事件来解决，更新render通过state变化来更新&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/a9983a336460498e8fcb0ebff6519b87.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/4ce33df96b73408cbd73aaa01272e997.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/ab9d60460bed42458e94f06b5ac9cdfe.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="采用createRef"><a href="#采用createRef" class="headerlink" title="采用createRef"></a>采用createRef</h3><p><img src="https://img-blog.csdnimg.cn/75c5a31c3c464e619d1a6609bd943573.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/ac727f804c2349faa08089648f7d10ca.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h3 id="事件处理"><a href="#事件处理" class="headerlink" title="事件处理"></a>事件处理</h3><p><img src="https://img-blog.csdnimg.cn/c3b7fd9dc6ac46ada9170adc2d5eda9a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/797115608ade49ecb47bb1541d712ca0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pyq5YWl5rWB55qE5bCP6YK5,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
 
       
  <!-- 《添加版权声明 -->
@@ -331,16 +301,16 @@
     
     <br>
     <strong class="create-time">发布时间：</strong>
-    2022-02-13
+    2024-02-12
     <br>
     <strong class="update-time">最后更新：</strong>
     2022-06-04
     <br>
     <strong class="article-titles">本文标题：</strong>
-    <a href="https://zihong135.github.io/2022/02/13/React学习（二）/" title="React学习(二)" target="_blank">React学习(二)</a>
+    <a href="https://zihong135.github.io/2024/02/12/React学习（一）/" title="React学习(一)" target="_blank">React学习(一)</a>
     <br>
     <strong class="article-url">本文链接：</strong>
-    <a href="https://zihong135.github.io/2022/02/13/React学习（二）/" title="React学习(二)" target="_blank">https://zihong135.github.io/2022/02/13/React学习（二）/</a>
+    <a href="https://zihong135.github.io/2024/02/12/React学习（一）/" title="React学习(一)" target="_blank">https://zihong135.github.io/2024/02/12/React学习（一）/</a>
     <br>
     <strong class="copyright">版权声明：</strong>
     本作品采用
@@ -361,21 +331,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">React</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WEB</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
@@ -441,7 +396,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zihong135.github.io/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zihong135.github.io/2024/02/12/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -455,18 +410,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/06/04/JavaScript%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2024/02/12/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          JavaScript学习(一)
+          React学习(二)
         
       </div>
     </a>
   
   
-    <a href="/2022/02/13/React%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">React学习(一)</div>
+    <a href="/2024/02/12/JavaScript%E5%AD%A6%E4%B9%A0(%E5%9B%9B)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript学习(四)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -493,7 +448,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6%E5%92%8C%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">受控组件和非受控组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">受控组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.</span> <span class="toc-text">非受控组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A5%E5%85%85%E7%9F%A5%E8%AF%86"><span class="toc-number">1.3.</span> <span class="toc-text">补充知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="toc-number">1.3.1.</span> <span class="toc-text">高阶函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96"><span class="toc-number">1.3.2.</span> <span class="toc-text">函数柯里化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E7%94%A8%E6%9F%AF%E9%87%8C%E5%8C%96%E5%AE%9E%E7%8E%B0%E9%9D%9E%E5%8F%97%E6%8E%A7"><span class="toc-number">1.3.3.</span> <span class="toc-text">不用柯里化实现非受控</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">2.</span> <span class="toc-text">生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%88%E6%97%A7%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">生命周期（旧）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E9%98%B6%E6%AE%B5-%E7%94%B1ReactDOM-render-%E8%A7%A6%E5%8F%91%E2%80%94%E5%88%9D%E6%AC%A1%E6%B8%B2%E6%9F%93"><span class="toc-number">2.1.1.</span> <span class="toc-text">初始化阶段: 由ReactDOM.render()触发—初次渲染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5-%E7%94%B1%E7%BB%84%E4%BB%B6%E5%86%85%E9%83%A8this-setSate%E8%A7%A6%E5%8F%91"><span class="toc-number">2.1.2.</span> <span class="toc-text">更新阶段: 由组件内部this.setSate触发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E5%88%B6%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5"><span class="toc-number">2.1.3.</span> <span class="toc-text">强制更新阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E9%98%B6%E6%AE%B5-%E7%94%B1%E7%88%B6%E7%BB%84%E4%BB%B6render%E8%A7%A6%E5%8F%91"><span class="toc-number">2.1.4.</span> <span class="toc-text">更新阶段: 由父组件render触发</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%88%E6%96%B0%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">生命周期（新）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E9%98%B6%E6%AE%B5-%E7%94%B1ReactDOM-render-%E8%A7%A6%E5%8F%91%E2%80%94%E5%88%9D%E6%AC%A1%E6%B8%B2%E6%9F%93-1"><span class="toc-number">2.2.1.</span> <span class="toc-text">初始化阶段: 由ReactDOM.render()触发—初次渲染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E4%B9%8B%E5%89%8D"><span class="toc-number">2.2.2.</span> <span class="toc-text">更新之前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E4%B9%8B%E5%90%8E"><span class="toc-number">2.2.3.</span> <span class="toc-text">更新之后</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getSnapshotBeforeUpdate%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.2.4.</span> <span class="toc-text">getSnapshotBeforeUpdate的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B3%E5%B0%86%E5%BA%9F%E5%BC%83%E7%9A%84%E5%8B%BE%E5%AD%90"><span class="toc-number">2.2.5.</span> <span class="toc-text">即将废弃的勾子</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#diff%E7%AE%97%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">diff算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#key%E6%A0%87%E8%AF%86%E9%97%AE%E9%A2%98"><span class="toc-number">3.1.</span> <span class="toc-text">key标识问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8index%E4%BD%9C%E4%B8%BA%E5%94%AF%E4%B8%80%E6%A0%87%E8%AF%86-%E6%9B%B4%E6%96%B0%E4%BA%BA%E5%91%98%E6%94%BE%E6%9C%80%E4%B8%8A%E9%9D%A2"><span class="toc-number">3.1.1.</span> <span class="toc-text">使用index作为唯一标识(更新人员放最上面)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8id%E4%BD%9C%E4%B8%BA%E5%94%AF%E4%B8%80%E6%A0%87%E8%AF%86-%E6%9B%B4%E6%96%B0%E4%BA%BA%E5%91%98%E6%94%BE%E5%9C%A8%E6%9C%80%E4%B8%8A%E9%9D%A2"><span class="toc-number">3.1.2.</span> <span class="toc-text">使用id作为唯一标识(更新人员放在最上面)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">3.1.3.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E4%B8%AD%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9key"><span class="toc-number">3.1.3.1.</span> <span class="toc-text">开发中如何选择key?:</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#React%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">React是什么？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JS%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">2.</span> <span class="toc-text">JS的缺点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#React%E7%89%B9%E7%82%B9"><span class="toc-number">3.</span> <span class="toc-text">React特点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AAReact"><span class="toc-number">4.</span> <span class="toc-text">第一个React</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9FDOM%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%88%9B%E5%BB%BA%E6%96%B9%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">虚拟DOM的两种创建方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8jsx%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9FDOM"><span class="toc-number">4.2.1.</span> <span class="toc-text">使用jsx创建虚拟DOM</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9C%9F%E5%AE%9EDOM%E4%B8%8E%E8%99%9A%E6%8B%9FDOM"><span class="toc-number">4.3.</span> <span class="toc-text">真实DOM与虚拟DOM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9C%9F%E5%AE%9EDOM%E5%B1%9E%E6%80%A7"><span class="toc-number">4.3.1.</span> <span class="toc-text">真实DOM属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%99%9A%E6%8B%9FDOM%E5%B1%9E%E6%80%A7"><span class="toc-number">4.3.2.</span> <span class="toc-text">虚拟DOM属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JSX%E8%AF%AD%E6%B3%95%EF%BC%88-JavaScript-XML%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">JSX语法（ JavaScript XML）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS%E4%BB%A3%E7%A0%81%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%BA%E5%88%AB"><span class="toc-number">5.1.</span> <span class="toc-text">JS代码与表达式区别</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E4%B8%8E%E7%BB%84%E4%BB%B6%E3%80%81%E6%A8%A1%E5%9D%97%E5%8C%96%E4%B8%8E%E7%BB%84%E4%BB%B6%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">6.</span> <span class="toc-text">模块与组件、模块化与组件化的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97"><span class="toc-number">6.1.</span> <span class="toc-text">模块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6"><span class="toc-number">6.2.</span> <span class="toc-text">组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="toc-number">6.3.</span> <span class="toc-text">模块化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E5%8C%96"><span class="toc-number">6.4.</span> <span class="toc-text">组件化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8React%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E8%B0%83%E8%AF%95"><span class="toc-number">6.5.</span> <span class="toc-text">使用React开发者工具调试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6"><span class="toc-number">6.6.</span> <span class="toc-text">函数式组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%BC%8F%E7%BB%84%E4%BB%B6"><span class="toc-number">6.7.</span> <span class="toc-text">类式组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">6.7.1.</span> <span class="toc-text">类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6-1"><span class="toc-number">6.7.2.</span> <span class="toc-text">组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#state%E7%8A%B6%E6%80%81"><span class="toc-number">6.7.3.</span> <span class="toc-text">state状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6"><span class="toc-number">6.7.4.</span> <span class="toc-text">点击事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B"><span class="toc-number">6.7.5.</span> <span class="toc-text">案例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#props%E5%B1%9E%E6%80%A7"><span class="toc-number">6.8.</span> <span class="toc-text">props属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%95%E5%BC%80%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">6.8.1.</span> <span class="toc-text">展开运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E7%B1%BB%E5%9E%8B%E8%BF%9B%E8%A1%8C%E9%99%90%E5%88%B6"><span class="toc-number">6.8.2.</span> <span class="toc-text">对类型进行限制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%86%99%E6%96%B9%E5%BC%8F"><span class="toc-number">6.8.3.</span> <span class="toc-text">简写方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A5%E5%85%85%E7%B1%BB%E7%9F%A5%E8%AF%86"><span class="toc-number">6.8.4.</span> <span class="toc-text">补充类知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%99%A8%E4%B8%AD%E7%9A%84props"><span class="toc-number">6.8.5.</span> <span class="toc-text">构造器中的props</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%85%A5props"><span class="toc-number">6.8.6.</span> <span class="toc-text">函数式组件传入props</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#refs%E5%B1%9E%E6%80%A7"><span class="toc-number">6.9.</span> <span class="toc-text">refs属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#refs%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BD%A2%E5%BC%8F%E7%94%A8%E6%B3%95%EF%BC%88%E5%8F%AF%E8%83%BD%E6%9C%AA%E6%9D%A5%E5%BA%9F%E5%BC%83"><span class="toc-number">6.9.1.</span> <span class="toc-text">refs字符串形式用法（可能未来废弃)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E5%BD%A2%E5%BC%8F"><span class="toc-number">6.9.2.</span> <span class="toc-text">回调函数形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%87%E7%94%A8createRef"><span class="toc-number">6.9.3.</span> <span class="toc-text">采用createRef</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86"><span class="toc-number">6.9.4.</span> <span class="toc-text">事件处理</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -526,7 +481,7 @@ if(true){
     repo: 'zihong135.github.io',
     owner: 'zihong135',
     admin: ['zihong135'],
-    id: 'Sun Feb 13 2022 10:46:27 GMT+0800',
+    id: 'Mon Feb 12 2024 21:56:54 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
@@ -544,7 +499,7 @@ gitalk.render('gitalk-container')
   <div class="outer">
     <div id="footer-info">
         <div class="footer-left">
-            &copy; 2022 未入流的小邹
+            &copy; 2024 未入流的小邹
         </div>
         <div class="footer-right">
             <a href="https://hexo.io/zh-cn/" target="_blank">Evan</a>  Always Love<a href="https://github.com/litten/hexo-theme-yilia" target="_blank"> Vivian</a>
@@ -654,11 +609,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
+                <a href="javascript:void(0)" class="js-tag color2">vue.js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">vue.js</a>
+                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
               </li>
             
             <div class="clearfix"></div>
